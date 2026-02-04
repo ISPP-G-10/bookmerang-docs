@@ -85,7 +85,7 @@
 | :---: | :---: | ----- | ----- |
 | v1.0 | 02/02/2026 | Alejandro Vela, Peter Carter, Fernando Triguero | Gestión de repositorios, ramas, commits, tareas, tiempo, conflictos, CI/CD, herramientas y versionado. |
 | v1.1 | 03/02/2026 | Alejandro Vela, Peter Carter, Fernando Triguero, Julián Romero | Corrección de puntos y stack acabado. Gestión de comunicación, riesgos y roles. |
-| v1.2   | 04/02/2026  | Alejandro Castilla  | Adición de la portada y corrección de estilo.  
+| v1.2   | 04/02/2026  | Alejandro Castilla  | Adición de la portada y corrección de estilo. |
 
 ---
 
