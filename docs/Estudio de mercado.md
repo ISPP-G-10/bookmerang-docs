@@ -66,6 +66,7 @@
   - [5.2 Estrategia de Retención (Fase 2 - Engagement)](#52-estrategia-de-retención-fase-2---engagement)
   - [5.3 Escalabilidad (Fases 3 y 4)](#53-escalabilidad-fases-3-y-4)
 - [6. Modelo de monetización](#6-modelo-de-monetización)
+- [7. Matriz DAFO](#7-matriz-dafo)
 - [7. Viabilidad técnica y roadmap](#7-viabilidad-técnica-y-roadmap)
 
 ---
@@ -77,7 +78,9 @@
 | :---: | :---: | ----- | ----- |
 | v1.0 | 02/02/2026 | Antonio Luis Jiménez | Primera versión del documento |
 | v1.1 | 03/02/2026 | Antonio Luis Jiménez  Julián Romero | Correcciones sobre v1.0 |
-| v1.2   | 04/02/2026  | Alejandro Castilla  | Adición de la portada y corrección de estilo. |
+| v1.2 | 08/02/2026 | Fernando Triguero | Expansión del análisis de competidores |
+| v1.3 | 09/02/2026 | Antonio Luis Jiménez  Julián Romero Fernando Triguero Peter Carter Alejandro Vela | Revisión del análisis de competidores |
+| v1.4 | 15/02/2026 | Alejandro Vela Julián Romero | Revisión posterior a la presentación |
 
 ---
 
@@ -107,13 +110,13 @@ El mercado actual presenta soluciones fragmentadas. Bookmerang se posiciona en u
 | Libroo.es | Intercambio de libros usados. | Experiencia de usuario transaccional, sin retención social ni comunidad. | Experiencia gamificada (Sistema Smart Matching geográfico) y *feed* social. |
 | Librerías tradicionales | Venta de novedades. | Modelo lineal (comprar-leer-guardar en la estantería) de alto coste. | Modelo circular (leer-intercambiar-leer), dando una segunda vida a los libros ya leídos. |
 
-## 4. Propuesta de valor
+## 4. Valor diferencial
 
 Bookmerang articula su propuesta de valor sobre tres pilares fundamentales que responden directamente a las necesidades del usuario: economía, tecnología y sostenibilidad:
 
-1. Smart Matching Geográfico: Esto permite al usuario encontrar coincidencias ("matches") dentro de un radio personalizado, optimizando la logística del intercambio.​  
-2. Digitalización sin Fricción: Sistema de escaneo inteligente que permite al usuario registrar sus libros instantáneamente mediante la cámara del móvil. Esto elimina la tediosa tarea de subir datos manualmente y facilita la creación rápida de inventario en la plataforma.  
-3. Wishlist Inteligente: Tú dices qué quieres leer y el sistema te avisa en cuanto alguien cerca de ti lo tiene disponible. No necesitas entrar a buscar todos los días; la app te busca el libro a ti.
+1. **Matcher de Descubrimiento Progresivo:** Implementación de un sistema basado en tarjetas individuales (estilo Tinder) donde el descubrimiento de libros se realiza de forma secuencial. No se permite la exploración de bibliotecas completas, reforzando una experiencia basada en la curiosidad y el descubrimiento guiado por un score dinámico de proximidad y preferencias.  
+2. **Logística Asíncrona (BookDrop):** Introducción de la funcionalidad BookDrop, que permite intercambios sin necesidad de encuentro presencial simultáneo. Un usuario deposita el libro en un establecimiento BookSpot y el otro lo recoge a su propio ritmo, resolviendo el problema de agendas incompatibles.  
+3. **Comunidades de Cercanía:** Evolución de los clubes de lectura hacia grupos reducidos de aproximadamente 10 personas vinculados a un **BookSpot de referencia** (punto físico oficial). Esto transforma la app en una plataforma social que genera hábitos compartidos y pertenencia real.
 
 ## 5. Estrategia de Go-to-Market (cómo llegar al cliente)
 
@@ -127,8 +130,12 @@ Nuestra estrategia de adquisición y crecimiento se despliega en cuatro fases:
 
 ### 5.2 Estrategia de Retención (Fase 2 - Engagement)
 
-* Gamificación: Implementación de un sistema de puntos y logros (ej. "Árboles salvados", "Libros recirculados") para incentivar la subida de libros y la interacción diaria, no solo transaccional.​  
-* Social Loops: El chat integrado y las *stories* con fragmentos de libros fomentan que el usuario entre a la app diariamente, no solo cuando necesita un libro específico.
+* **Sistema de Gamificación: InkDrops, Niveles y Rachas**  
+  * **InkDrops:** Los usuarios obtienen 100 InkDrops por intercambio validado y 200 por asistencia a eventos de comunidad. Aunque se reinician mensualmente para el ranking, generan experiencia permanente para el sistema de niveles.  
+  * **Sistema de 50 Niveles:** Curva de progresión permanente basada en la experiencia acumulada. El sistema incluye 6 categorías visuales (desde Bronce hasta Legendario) y desbloquea recompensas cosméticas exclusivas cada 5 niveles, como marcos de avatar animados e insignias.  
+  * **Sistema de Rachas Semanales:** Motor de retención que premia la constancia. Una acción válida por semana activa multiplicadores de puntos que escalan hasta un **136% de bonificación** en la sexta semana de actividad consecutiva.  
+  * **Ranking Mensual Premium:** Competición exclusiva para usuarios de pago dentro de sus comunidades, donde el líder mensual es recompensado con un mes de suscripción gratuita.  
+* Social Loops: El chat integrado y las comunidades fomentan que el usuario entre a la app diariamente, no solo cuando necesita un libro específico.
 
 ### 5.3 Escalabilidad (Fases 3 y 4)
 
@@ -136,15 +143,39 @@ Nuestra estrategia de adquisición y crecimiento se despliega en cuatro fases:
 
 ## 6. Modelo de monetización
 
-Para garantizar la sostenibilidad financiera del proyecto sin comprometer el crecimiento de la masa crítica, se adopta un modelo híbrido:
+Para garantizar la sostenibilidad financiera del proyecto sin comprometer el crecimiento de la masa crítica, se adopta el siguiente modelo
 
-1. Freemium (B2C):  
-   * *Free:* Acceso completo a intercambios básicos y red social. Monetización vía Google Ads no intrusivos en el feed.  
-   * *Premium:* Suscripción mensual que elimina publicidad, ofrece envíos ilimitados (integración logística futura), prioridad en el algoritmo de matching y perfil destacado ("foco letterbox").
+1. Modelo B2C:  
+   * **Modelo Freemium:** Acceso gratuito con publicidad externa y **Publicidad Nativa** integrada en el Matcher (una tarjeta de establecimiento patrocinada cada 1-5 deslizamientos). El acceso a comunidades está limitado a una sola y no permite ver la biblioteca compartida ni usar el sistema de "Likes".  
+   * **Suscripción Premium (2,99€/mes):** Elimina toda la publicidad, desbloquea el acceso ilimitado a comunidades, permite la interacción con la biblioteca colectiva y habilita la participación en los rankings mensuales con premios
+
+2. Modelo B2B  
+   **Plan Partner (4,99€/mes):** Dirigido a cafeterías y librerías que deseen atraer tráfico físico a sus locales. Incluye:  
+* **Visibilidad Prioritaria:** Marcadores destacados en el mapa y aparición preferente en búsquedas y anuncios nativos.  
+* **Exclusividad BookDrop:** Solo los locales asociados pueden actuar como puntos de gestión asíncrona.  
+* **Ingresos por Gestión:** El establecimiento recibe **1,00€ por cada intercambio gestionado** mediante BookDrop, incentivando la custodia segura de libros y fomentando el consumo adicional en el local.
+
 
    
+## 7. Matriz DAFO
 
-## 7. Viabilidad técnica y roadmap
+| FORTALEZAS (Internas) | DEBILIDADES (Internas) |
+| :---: | :---: |
+| **Innovación en UX:** Interfaz "Matcher" tipo Tinder que gamifica la búsqueda y fomenta el descubrimiento progresivo de libros. | **Dependencia de Red Física:** El valor del *BookDrop* depende de conseguir una base sólida de partners (cafeterías/librerías) iniciales. |
+| **Logística Asíncrona:** El sistema *BookDrop* resuelve la mayor barrera de los competidores: la dificultad de cuadrar horarios para el intercambio. | **Fricción en Modelo Gratuito:** La presencia de anuncios en el Matcher podría afectar la experiencia del usuario no premium. |
+| **Gamificación Avanzada:** Sistema de niveles (1-50) y rachas semanales que incentivan la retención a largo plazo mejor que un simple catálogo. | **Efecto Red Local:** En zonas con baja densidad de usuarios, la funcionalidad de proximidad pierde eficacia rápidamente. |
+| **Modelo de Negocio Híbrido:** Ingresos diversificados mediante suscripciones de usuarios (B2C) y de establecimientos (B2B). | **Curva de Aprendizaje:** El sistema de *InkDrops* y niveles es más complejo que las apps de intercambio tradicionales. |
+
+
+
+| OPORTUNIDADES (Externas) | AMENAZAS (Externas) |
+| :---: | :---: |
+| **Auge de la Economía Circular:** Creciente concienciación sobre el consumo sostenible y la reutilización de productos físicos. | **Competidores Consolidados:** Plataformas de segunda mano generalistas (Wallapop, Vinted) que, aunque no especializadas, tienen gran masa crítica. |
+| **Revitalización del Comercio Local:** Los negocios buscan formas creativas (como ser un *BookSpot*) para atraer tráfico físico tras la digitalización. | **Digitalización de la Lectura:** El crecimiento continuo de los E-books y audiolibros como alternativa al formato físico. |
+| **Nicho de Comunidad:** Inexistencia de una plataforma que combine el intercambio de libros con una red social de grupos reducidos y cercanos. | **Barreras de Entrada Geográficas:** Dificultad para escalar el modelo B2B en ciudades pequeñas o zonas rurales. |
+| **Alianzas Estratégicas:** Posibilidad de colaborar con editoriales para promocionar lanzamientos mediante "BookDrops" patrocinados. | **Logística de Terceros:** Riesgo de pérdida o mal estado de los libros en los puntos de custodia si no hay un control estricto. |
+
+## 8. Viabilidad técnica y roadmap 
 
 
 La estrategia de mercado se sustenta en una arquitectura escalable:
