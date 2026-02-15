@@ -1,29 +1,28 @@
-<h1 style="text-align: center;">Titulo descriptivo del documento</h1>
+<div align="center">
 
-<p style="text-align: center; font-size: 1.2em; margin-top: -10px;">
+<h1>Titulo descriptivo del documento</h1>
+
+<p style="font-size: 1.2em; margin-top: -10px;">
   <strong>Bookmerang</strong>
 </p>
 
 <br/>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"
-            srcset="../assets/img/logo-bookmerang-dark.png">
-    <source media="(prefers-color-scheme: light)"
-            srcset="../assets/img/logo-bookmerang-light.png">
-    <img
-      src="../assets/img/logo-bookmerang-light.png"
-      alt="Bookmerang logo"
-      style="width: 360px; height: auto;"
-    />
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark )"
+          srcset="assets/img/logo-bookmerang-dark.png">
+  <source media="(prefers-color-scheme: light )"
+          srcset="assets/img/logo-bookmerang-light.png">
+  <img
+    src="assets/img/logo-bookmerang-light.png"
+    alt="Bookmerang logo"
+    width="320"
+  />
+</picture>
 
-<br/>
-<br/>
+<br/><br/>
 
-<hr/>
+<hr style="width: 60%;"/>
 
 <br/>
 
@@ -32,28 +31,25 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 24px;
-  row-gap: 16px;
+  gap: 20px;
   text-align: center;
 ">
 
-  <!-- Logo ETSII -->
-  <div style="flex: 0 0 auto;">
+  <div>
     <picture>
-      <source media="(prefers-color-scheme: dark)"
-              srcset="../assets/img/us-etsi-inf-dark.png">
-      <source media="(prefers-color-scheme: light)"
-              srcset="../assets/img/us-etsi-inf-light.png">
+      <source media="(prefers-color-scheme: dark )"
+              srcset="assets/img/us-etsi-inf-dark.png">
+      <source media="(prefers-color-scheme: light )"
+              srcset="assets/img/us-etsi-inf-light.png">
       <img
-        src="../assets/img/us-etsi-inf-light.png"
+        src="assets/img/us-etsi-inf-light.png"
         alt="ETSII – Universidad de Sevilla"
-        style="width: 180px; height: auto;"
+        width="180"
       />
     </picture>
   </div>
 
-  <!-- Datos académicos -->
-  <div style="flex: 0 1 360px;">
+  <div style="max-width: 360px;">
     <p style="margin: 0; line-height: 1.6;">
       <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br/>
       <strong>Grupo:</strong> C Tarde — <em>Bookmerang</em><br/>
@@ -64,8 +60,7 @@
 
 </div>
 
-<br/>
-<br/>
+</div>
 
 <hr/>
 

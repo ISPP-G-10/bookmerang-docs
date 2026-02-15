@@ -1,57 +1,70 @@
-<h1 style="text-align: center;">Estudio de Mercado</h1>
+<div align="center">
 
-<p style="text-align: center; font-size: 1.2em; margin-top: -10px;">
+<h1>Estudio de Mercado</h1>
+
+<p style="font-size: 1.2em; margin-top: -10px;">
   <strong>Bookmerang</strong>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)"
-            srcset="assets/img/logo-bookmerang-light.png">
-    <source media="(prefers-color-scheme: dark)"
-            srcset="assets/img/logo-bookmerang-dark.png">
-    <img alt="Bookmerang logo"
-         src="assets/img/logo-bookmerang-light.png"
-         width="320">
-  </picture>
-</p>
+<br/>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark )"
+          srcset="assets/img/logo-bookmerang-dark.png">
+  <source media="(prefers-color-scheme: light )"
+          srcset="assets/img/logo-bookmerang-light.png">
+  <img
+    src="assets/img/logo-bookmerang-light.png"
+    alt="Bookmerang logo"
+    width="320"
+  />
+</picture>
+
+<br/><br/>
+
+<hr style="width: 60%;"/>
+
+<br/>
 
 <div style="
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   text-align: center;
 ">
 
+  <!-- Logo ETSII -->
   <div>
     <picture>
-      <source media="(prefers-color-scheme: dark)"
+      <source media="(prefers-color-scheme: dark )"
               srcset="assets/img/us-etsi-inf-dark.png">
-      <source media="(prefers-color-scheme: light)"
+      <source media="(prefers-color-scheme: light )"
               srcset="assets/img/us-etsi-inf-light.png">
-      <img alt="ETSII – Universidad de Sevilla"
-           src="assets/img/us-etsi-inf-light.png"
-           width="200">
+      <img
+        src="assets/img/us-etsi-inf-light.png"
+        alt="ETSII – Universidad de Sevilla"
+        width="180"
+      />
     </picture>
   </div>
 
-  <div>
-    <p style="margin: 0;">
-      <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br>
-      <strong>Grupo:</strong> C Tarde — <em>Bookmerang</em><br>
-      <strong>Grado:</strong> Ingeniería del Software<br>
+  <!-- Texto académico -->
+  <div style="max-width: 360px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br/>
+      <strong>Grupo:</strong> C Tarde — <em>Bookmerang</em><br/>
+      <strong>Grado:</strong> Ingeniería del Software<br/>
       <strong>Centro:</strong> ETSII — Universidad de Sevilla
     </p>
   </div>
 
 </div>
 
---- 
+</div>
 
+<hr/>
 
 ## Índice
 
@@ -73,13 +86,13 @@
 
 ## 1. Historial de Versiones
 
-
 | Versión | Fecha | Participantes | Resumen de los cambios |
 | :---: | :---: | ----- | ----- |
 | v1.0 | 02/02/2026 | Antonio Luis Jiménez | Primera versión del documento |
 | v1.1 | 03/02/2026 | Antonio Luis Jiménez  Julián Romero | Correcciones sobre v1.0 |
 | v1.2 | 08/02/2026 | Fernando Triguero | Expansión del análisis de competidores |
 | v1.3 | 09/02/2026 | Antonio Luis Jiménez  Julián Romero Fernando Triguero Peter Carter Alejandro Vela | Revisión del análisis de competidores |
+| v1.4 | 10/02/2026 | Alejandro Castilla | Corrección de la portada, corrección de estilo markdown y adición de cambios. |
 | v1.4 | 15/02/2026 | Alejandro Vela Julián Romero | Revisión posterior a la presentación |
 
 ---
@@ -89,6 +102,8 @@
 Bookmerang nace para dar una segunda vida a esos libros que se quedan olvidados en la estantería, combatiendo a la vez los precios altos que dificultan el acceso a la cultura. Nuestra propuesta es sencilla: que los libros dejen de acumular polvo y empiecen a acumular lectores. Queremos reactivar esos libros que ya has leído para que, en lugar de quedarse olvidados en casa, sigan generando valor en manos de otra persona. 
 
 Bookmerang combina lo práctico con lo emocional: te ayuda a renovar tu biblioteca  de libros de forma eficaz, pero lo hace conectándote con personas reales en un entorno apoyado por una comunidad amplia y activa, transformando una simple transacción en una experiencia comunitaria. Todo ello impulsado por tecnología que conecta a usuarios cercanos y sugiere el matching perfecto para intercambiar libros, haciendo que compartir cultura sea fácil y natural.
+
+---
 
 ## 3. Análisis de mercado
 
@@ -110,6 +125,133 @@ El mercado actual presenta soluciones fragmentadas. Bookmerang se posiciona en u
 | Libroo.es | Intercambio de libros usados. | Experiencia de usuario transaccional, sin retención social ni comunidad. | Experiencia gamificada (Sistema Smart Matching geográfico) y *feed* social. |
 | Librerías tradicionales | Venta de novedades. | Modelo lineal (comprar-leer-guardar en la estantería) de alto coste. | Modelo circular (leer-intercambiar-leer), dando una segunda vida a los libros ya leídos. |
 
+El ecosistema actual de soluciones relacionadas con la lectura y los libros se puede agrupar en tres grandes bloques: plataformas de lectura social, plataformas de intercambio/segunda mano y librerías tradicionales (físicas y online). A continuación se detallan las funcionalidades clave de los principales referentes y cómo se posicionan frente a la propuesta de Bookmerang.
+
+#### **3.2.1 Fable**
+
+Fable es una app centrada en la lectura social: combina clubes de lectura, recomendaciones, un blog y un lector de ebooks propio. Su propuesta se basa en que las personas lean “juntas pero desde cualquier lugar”, generando conversación alrededor de libros y, más recientemente, también de series de TV.
+
+Funcionalidades principales
+
+* Clubes de lectura  
+  * Catálogo de miles de clubes gratuitos y de pago, segmentados por géneros, intereses, fandoms o moderadores (autores, influencers, etc.).  
+  * Posibilidad de crear tu propio club e invitar a amigos, comunidad de Discord, etc.​  
+* Lectura social dentro del ebook  
+  * Lector integrado que permite subrayar, tomar notas, añadir comentarios y reacciones directamente sobre el texto.​  
+  * Sincronización de anotaciones con “salas” de discusión por capítulos, de forma que se puede ver en tiempo real cómo reaccionan otros lectores a pasajes concretos.  
+* Gestión de listas y descubrimiento  
+  * Gestión de TBR (“to be read”) y otras listas personalizadas de libros y contenidos.​  
+  * Sistema de valoraciones con medias o cuartos de estrellas, reseñas detalladas y etiquetas emocionales para describir cómo te hizo sentir un libro.​  
+  * “Folios” y listas “curadas” por autores, celebrities y “tastemakers” como contenido editorial destacado.​  
+* Modelo freemium y contenido premium  
+  * Cuenta básica gratuita con acceso a parte de los clubes y recomendaciones.​  
+  * Clubs y experiencias premium (p. ej. moderados por celebrities) detrás de paywall, así como modos de lectura social ligados a la compra del ebook dentro de Fable.​
+
+Limitaciones frente a Bookmerang
+
+* Fable no ofrece intercambio físico de libros ni mecanismos explícitos de economía circular: el foco está en el consumo digital y en la conversación, no en dar salida a los libros que ya tienes en casa.  
+* La experiencia social se centra en comunidades globales y en torno a títulos concretos, pero no en la proximidad geográfica ni en el matching de personas cercanas para intercambiar ejemplares físicos.  
+* La propuesta de valor económica está ligada a la compra de ebooks dentro de la app, no a leer más gastando menos mediante reutilización de libros físicos.
+
+**Conclusión**
+
+Fable es un excelente referente para la capa social y de comunidad lectora (clubs, discusiones por capítulos, lectura social en tiempo real), pero no compite directamente en el espacio de intercambio físico y circular de libros que define a Bookmerang. Esto convierte a Fable en una referencia útil en términos de funcionalidad social, pero no cubre el “dolor” económico y de desaprovechamiento de libros que Bookmerang aborda.
+
+#### **3.2.2 Libroo.es**
+
+Libroo se presenta como una webapp para intercambiar libros usados entre usuarios. El intercambio no es estrictamente “uno a uno”, sino que se articula a través de un sistema de “créditos Libroo”, que funcionan como moneda interna: al entregar libros obtienes créditos y con ellos puedes “comprar” otros libros dentro de la plataforma.​
+
+**Funcionalidades principales**
+
+* Intercambio basado en créditos  
+  * Sistema interno de créditos que permite recibir libros de distintos usuarios sin necesidad de un trueque directo libro-por-libro.​  
+  * El crédito actúa como capa de abstracción sobre el valor de cada libro y como incentivo para subir inventario.  
+* Plataforma webapp  
+  * Funcionamiento principal vía webapp, orientada a la gestión de catálogo y transacciones de intercambio online.​
+
+*(La información pública disponible no detalla funcionalidades avanzadas como geolocalización, chat integrado, gamificación o feed social; la percepción es de una plataforma principalmente transaccional centrada en el intercambio mediante créditos.)*​
+
+**Limitaciones frente a Bookmerang**
+
+* Ausencia de capa social estructurada  
+  * No se identifican funcionalidades propias de red social (stories, feed de actividad, clubs de lectura o sistema de seguidores), lo que limita la retención basada en comunidad y el “enganche” diario más allá del momento puntual de intercambio.​  
+* Interacción usuario-plataforma más que usuario-usuario  
+  * El uso de créditos como moneda virtual prioriza la relación con el sistema sobre el vínculo directo entre personas, mientras que Bookmerang busca fomentar una experiencia comunitaria y relacional (chat, clubs, historias, etc.).  
+* Experiencia poco gamificada  
+  * No se describen sistemas de logros, niveles o métricas visibles (p. ej. “árboles salvados”, “libros recirculados”), que en Bookmerang son una palanca clave de motivación intrínseca y de visibilización del impacto.
+
+**Conclusión**
+
+Libroo resuelve bien el problema puramente transaccional del intercambio de libros usados a través de créditos, pero no cubre el componente social, emocional y gamificado que propone Bookmerang. Su orientación es funcional (intercambiar), mientras que Bookmerang busca ser también un espacio social de lectores, con mayor potencial de recurrencia y engagement.
+
+#### **3.2.3 Librerías tradicionales**
+
+Aunque el estudio se centra en Fable y Libroo.es, existen otros actores que, sin competir de forma idéntica, ayudan a entender el espacio de soluciones alrededor de la reutilización de libros.
+
+Aplicaciones de intercambio gratuito de libros (ej. Bimdu)
+
+* Bimdu es una app móvil que permite intercambiar libros gratis con personas cercanas, dando una segunda vida a los ejemplares olvidados en estanterías.​  
+* Funcionalidades clave:  
+  * Subida de libros a una librería virtual personal, accesible para otros usuarios.​  
+  * Búsqueda de libros disponibles “a tu alrededor” (en tu localidad o barrio).   
+  * Chat integrado para coordinar el intercambio y quedar en persona.​  
+  * Posibilidad de crear una lista pública de “libros que quiero leer” para facilitar matches.​
+
+Bimdu se acerca más al concepto de Bookmerang en cuanto a proximidad geográfica, listas de deseos y chat, pero sigue sin incorporar una capa social tan rica (feed, historias, clubs) ni un sistema de gamificación y métricas de impacto tan explícito.
+
+Plataformas de compraventa de libros usados (ej. Sekundo, Hamelyn, Micobooks, momox)
+
+* Plataformas como Sekundo, Hamelyn, Micobooks o momox permiten vender libros usados a un intermediario que luego los revende, orientando el valor hacia el ingreso económico directo.  
+* Funcionalidades típicas:  
+  * Escaneo de código de barras/ISBN para evaluar el valor del libro y recibir una estimación inmediata del precio.  
+  * Recogida gratuita o puntos de entrega (ej. colaboración con InPost) y proceso logístico simplificado para el usuario.
+
+Aunque comparten el objetivo de dar una segunda vida a los libros, su lógica es lineal y mercantil (vender-comprar), más cercana a “deshacerse de libros” que a construir una comunidad lectora. Bookmerang, en contraste, plantea un modelo circular de intercambio entre personas, con más peso de la interacción social que de la transacción económica directa.
+
+Librerías tradicionales (físicas y online)
+
+* Ofrecen principalmente:  
+  * Acceso a novedades editoriales y catálogo vigente.  
+  * Asesoramiento experto (en librerías físicas) y filtros/buscadores avanzados (en ecommerce).  
+* Limitaciones respecto a la necesidad detectada:  
+  * Modelo lineal: comprar-leer-guardar, con un coste medio elevado por libro, especialmente para lectores frecuentes.  
+  * No ofrecen mecanismos de intercambio, reutilización ni economía circular sobre los ejemplares ya leídos.  
+  * La interacción social suele estar fuera de la plataforma (clubs presenciales, redes sociales externas), no integrada en la experiencia de compra/lectura.
+
+#### **3.2.4 Mapa comparativo de funcionalidades**
+
+A modo de síntesis, se puede representar el posicionamiento funcional frente a Bookmerang: 
+
+| Funcionalidad | Fable | Libroo.es | Bimdu | Librerías / reventa | Bookmerang (objetivo) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Intercambio físico de libros | ❌ | ✅(vía créditos)​ | ✅ (trueque directo)​ | ❌ (venta directa) | ✅ (modelo circular P2P) |
+| Capa social (feed, stories, clubs) | ✅ Clubs y lectura social avanzada | ❌ | ⚠️ Limitada a chat​ | ⚠️ Externa / mínima | ✅ Feed, stories, clubs in-app |
+| Proximidad geográfica / matching | ❌ (comunidad global)​ | ❌ | ✅(libros “a tu alrededor”)​ | ❌ | ✅ Smart Matching geográfico |
+| Wishlist y alertas | ✅ Listas TBR y recos​ | ❌ | ✅ Lista pública de deseos​ | ❌(salvo listas personales) | ✅ Wishlist inteligente \+ notificaciones |
+| Gamificación / métricas de impacto | ❌ No prominente | ❌ | ❌ | ❌ | ✅Puntos, logros, “árboles salvados” |
+| Modelo de monetización | ✅Freemium \+ clubs premium​ | ✅Intercambio con créditos​ | ✅Intercambio gratuito​ | ❌Compra-venta directa | ✅Freemium \+ premium con ventajas |
+
+#### **3.2.5 Oportunidad para Bookmerang**
+
+De este análisis funcional se desprenden varios huecos claros en el mercado que Bookmerang puede ocupar:
+
+* Integrar en una sola plataforma lo que hoy está fragmentado:  
+  * Capa social rica (como Fable) \+  
+  * Intercambio físico circular (como Libroo/Bimdu) \+  
+  * Lógica de proximidad y sostenibilidad (como algunas apps de segunda mano)  
+    en una experiencia coherente y centrada en la comunidad lectora.  
+* Resolver simultáneamente tres “dolores” que los competidores abordan sólo de forma parcial:  
+  * Económico (leer más gastando menos).  
+  * Espacio/inventario (dar salida a libros leídos).  
+  * Social/emocional (sentido de pertenencia, compartir lecturas).  
+* Diferenciarse funcionalmente mediante:  
+  * Smart Matching geográfico y wishlist inteligente (alertas automáticas).  
+  * Gamificación orientada a impacto (árboles salvados, libros recirculados).  
+  * Una red social nativa de lectores que hace que el usuario entre a la app aunque no tenga una necesidad inmediata de intercambio.
+
+Este encaje funcional refuerza la tesis de Bookmerang como solución de “océano azul”: en lugar de competir solo en precio o catálogo, construye una experiencia integral que combina logística de intercambio, comunidad y sostenibilidad, frente a competidores que cubren únicamente una de estas dimensiones.
+
+
 ## 4. Valor diferencial
 
 Bookmerang articula su propuesta de valor sobre tres pilares fundamentales que responden directamente a las necesidades del usuario: economía, tecnología y sostenibilidad:
@@ -118,17 +260,20 @@ Bookmerang articula su propuesta de valor sobre tres pilares fundamentales que r
 2. **Logística Asíncrona (BookDrop):** Introducción de la funcionalidad BookDrop, que permite intercambios sin necesidad de encuentro presencial simultáneo. Un usuario deposita el libro en un establecimiento BookSpot y el otro lo recoge a su propio ritmo, resolviendo el problema de agendas incompatibles.  
 3. **Comunidades de Cercanía:** Evolución de los clubes de lectura hacia grupos reducidos de aproximadamente 10 personas vinculados a un **BookSpot de referencia** (punto físico oficial). Esto transforma la app en una plataforma social que genera hábitos compartidos y pertenencia real.
 
+
+
 ## 5. Estrategia de Go-to-Market (cómo llegar al cliente)
 
 Nuestra estrategia de adquisición y crecimiento se despliega en cuatro fases: 
 
-### 5.1 Canales de Adquisición (Fase 1 - MVP)
+### 5.1 Canales de Adquisición (Fase 1 \- MVP)
 
 * Estrategia Hiperlocal: Dado que el intercambio físico depende de la densidad de usuarios, el lanzamiento se focalizará inicialmente en zonas geográficas acotadas (campus universitarios, barrios densos) para asegurar que el algoritmo de proximidad funcione.  
 * Marketing de Contenidos (\#BookTok): Aprovecharemos la tendencia orgánica de "libros recomendados" en redes sociales para posicionar Bookmerang como la herramienta que hace viable leer más de forma económica y sostenible  
 * SEO/ASO: Optimización de la presencia en tiendas de aplicaciones para términos relacionados con "intercambio de libros", "libros gratis" y "club de lectura".
 
-### 5.2 Estrategia de Retención (Fase 2 - Engagement)
+
+### 5.2 Estrategia de Retención (Fase 2 \- Engagement)
 
 * **Sistema de Gamificación: InkDrops, Niveles y Rachas**  
   * **InkDrops:** Los usuarios obtienen 100 InkDrops por intercambio validado y 200 por asistencia a eventos de comunidad. Aunque se reinician mensualmente para el ranking, generan experiencia permanente para el sistema de niveles.  
@@ -137,9 +282,10 @@ Nuestra estrategia de adquisición y crecimiento se despliega en cuatro fases:
   * **Ranking Mensual Premium:** Competición exclusiva para usuarios de pago dentro de sus comunidades, donde el líder mensual es recompensado con un mes de suscripción gratuita.  
 * Social Loops: El chat integrado y las comunidades fomentan que el usuario entre a la app diariamente, no solo cuando necesita un libro específico.
 
-### 5.3 Escalabilidad (Fases 3 y 4)
+### 5.3 Escalabilidad (Fases 3 y 4\)
 
 * Comunidades Virtuales: Creación de clubes de lectura dentro de la app para retener grupos enteros de usuarios.
+
 
 ## 6. Modelo de monetización
 
@@ -175,8 +321,8 @@ Para garantizar la sostenibilidad financiera del proyecto sin comprometer el cre
 | **Nicho de Comunidad:** Inexistencia de una plataforma que combine el intercambio de libros con una red social de grupos reducidos y cercanos. | **Barreras de Entrada Geográficas:** Dificultad para escalar el modelo B2B en ciudades pequeñas o zonas rurales. |
 | **Alianzas Estratégicas:** Posibilidad de colaborar con editoriales para promocionar lanzamientos mediante "BookDrops" patrocinados. | **Logística de Terceros:** Riesgo de pérdida o mal estado de los libros en los puntos de custodia si no hay un control estricto. |
 
-## 8. Viabilidad técnica y roadmap 
 
+## 8. Viabilidad técnica y roadmap 
 
 La estrategia de mercado se sustenta en una arquitectura escalable:
 

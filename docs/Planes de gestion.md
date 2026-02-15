@@ -1,56 +1,71 @@
-<h1 style="text-align: center;">Planes de gestión</h1>
+<div align="center">
 
-<p style="text-align: center; font-size: 1.2em; margin-top: -10px;">
+<h1>Planes de gestión</h1>
+
+<p style="font-size: 1.2em; margin-top: -10px;">
   <strong>Bookmerang</strong>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)"
-            srcset="assets/img/logo-bookmerang-light.png">
-    <source media="(prefers-color-scheme: dark)"
-            srcset="assets/img/logo-bookmerang-dark.png">
-    <img alt="Bookmerang logo"
-         src="assets/img/logo-bookmerang-light.png"
-         width="320">
-  </picture>
-</p>
+<br/>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark )"
+          srcset="assets/img/logo-bookmerang-dark.png">
+  <source media="(prefers-color-scheme: light )"
+          srcset="assets/img/logo-bookmerang-light.png">
+  <img
+    src="assets/img/logo-bookmerang-light.png"
+    alt="Bookmerang logo"
+    width="320"
+  />
+</picture>
+
+<br/><br/>
+
+<hr style="width: 60%;"/>
+
+<br/>
 
 <div style="
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   text-align: center;
 ">
 
+  <!-- Logo ETSII -->
   <div>
     <picture>
-      <source media="(prefers-color-scheme: dark)"
+      <source media="(prefers-color-scheme: dark )"
               srcset="assets/img/us-etsi-inf-dark.png">
-      <source media="(prefers-color-scheme: light)"
+      <source media="(prefers-color-scheme: light )"
               srcset="assets/img/us-etsi-inf-light.png">
-      <img alt="ETSII – Universidad de Sevilla"
-           src="assets/img/us-etsi-inf-light.png"
-           width="200">
+      <img
+        src="assets/img/us-etsi-inf-light.png"
+        alt="ETSII – Universidad de Sevilla"
+        width="180"
+      />
     </picture>
   </div>
 
-  <div>
-    <p style="margin: 0;">
-      <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br>
-      <strong>Grupo:</strong> C Tarde — <em>Bookmerang</em><br>
-      <strong>Grado:</strong> Ingeniería del Software<br>
+  <!-- Texto académico -->
+  <div style="max-width: 360px;">
+    <p style="margin: 0; line-height: 1.6;">
+      <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br/>
+      <strong>Grupo:</strong> C Tarde — <em>Bookmerang</em><br/>
+      <strong>Grado:</strong> Ingeniería del Software<br/>
       <strong>Centro:</strong> ETSII — Universidad de Sevilla
     </p>
   </div>
 
 </div>
 
----
+</div>
+
+<hr/>
+
 
 ## Índice
 
@@ -85,7 +100,7 @@
 | :---: | :---: | ----- | ----- |
 | v1.0 | 02/02/2026 | Alejandro Vela, Peter Carter, Fernando Triguero | Gestión de repositorios, ramas, commits, tareas, tiempo, conflictos, CI/CD, herramientas y versionado. |
 | v1.1 | 03/02/2026 | Alejandro Vela, Peter Carter, Fernando Triguero, Julián Romero | Corrección de puntos y stack acabado. Gestión de comunicación, riesgos y roles. |
-| v1.2   | 04/02/2026  | Alejandro Castilla  | Adición de la portada y corrección de estilo. |
+| v1.2   | 04/02/2026  | Alejandro Castilla  | Corrección de la portada y corrección de estilo. |
 
 ---
 
