@@ -153,6 +153,8 @@ Para asegurar una prueba efectiva, se han seleccionado usuarios que cumplen con 
 | Jorge Cabezas Grillo            | A               | jorgecabezas2004@gmail.com                        |
 | Rosa García Monterrubio         | D               | garciamonterrubiorosa@gmail.com                   |
 | Roberto Cordero Brenes          | D               | eustaquiofernandezambrosio@gmail.com             |
+| Pilar Utrera Cotán        | D               | utreracotan@gmail.com        |
+| Massimo Sito          | D               | sitomassimo01@gmail.com     |
 
 ---
 
