@@ -9,9 +9,9 @@
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: light )"
-          srcset="assets/img/logo-bookmerang-dark.png">
   <source media="(prefers-color-scheme: dark )"
+          srcset="assets/img/logo-bookmerang-dark.png">
+  <source media="(prefers-color-scheme: light )"
           srcset="assets/img/logo-bookmerang-light.png">
   <img
     src="assets/img/logo-bookmerang-light.png"
@@ -35,11 +35,12 @@
   text-align: center;
 ">
 
+  <!-- Logo ETSII -->
   <div>
     <picture>
-      <source media="(prefers-color-scheme: light )"
-              srcset="assets/img/us-etsi-inf-dark.png">
       <source media="(prefers-color-scheme: dark )"
+              srcset="assets/img/us-etsi-inf-dark.png">
+      <source media="(prefers-color-scheme: light )"
               srcset="assets/img/us-etsi-inf-light.png">
       <img
         src="assets/img/us-etsi-inf-light.png"
@@ -49,6 +50,7 @@
     </picture>
   </div>
 
+  <!-- Texto académico -->
   <div style="max-width: 360px;">
     <p style="margin: 0; line-height: 1.6;">
       <strong>Asignatura:</strong> ISPP (Curso 2025/26)<br/>
@@ -62,7 +64,7 @@
 
 </div>
 
----
+<hr/>
 
 ## Índice
 
@@ -91,7 +93,7 @@
 
 | Versión | Fecha | Participantes | Resumen de los cambios |
 |----------|----------|----------------------|--------------------------|
-| v1.0 | 16/02/2026 | Alejandro Castilla |  |
+| v1.0 | 16/02/2026 | Alejandro Castilla | Primera versión del documento |
 
 ---
 
