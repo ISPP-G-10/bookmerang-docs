@@ -1,4 +1,70 @@
-# Software Review Guidelines
+<div align="center">
+
+<h1>Grupo 8 - Sprint 1 - Software Review Guidelines</h1>
+
+<p style="font-size: 1.2em; margin-top: -10px;">
+<strong>Bookmerang</strong>
+</p>
+
+<br/>
+
+<picture>
+<source media="(prefers-color-scheme: dark)"
+srcset="../assets/img/logo-bookmerang-dark.png">
+<source media="(prefers-color-scheme: light)"
+srcset="../assets/img/logo-bookmerang-light.png">
+<img
+src="../assets/img/logo-bookmerang-light.png"
+alt="Bookmerang logo"
+width="320"
+/>
+</picture>
+
+<br/><br/>
+
+<hr style="width: 60%;"/>
+
+<br/>
+
+<div style="
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+text-align: center;
+">
+
+<div>
+<picture>
+<source media="(prefers-color-scheme: dark)"
+srcset="../assets/img/us-etsi-inf-dark.png">
+<source media="(prefers-color-scheme: light)"
+srcset="../assets/img/us-etsi-inf-light.png">
+<img
+src="../assets/img/us-etsi-inf-light.png"
+alt="ETSII – Universidad de Sevilla"
+width="180"
+/>
+</picture>
+</div>
+
+<div style="max-width: 360px;">
+<p style="margin: 0; line-height: 1.6;">
+<strong>Asignatura:</strong> ISPP (Curso 2025/26)<br/>
+<strong>Grupo:</strong> 8 — <em>Bookmerang</em><br/>
+<strong>Grado:</strong> Ingeniería del Software<br/>
+<strong>Centro:</strong> ETSII — Universidad de Sevilla
+</p>
+</div>
+
+</div>
+
+</div>
+
+<hr/>
+
+<!-- pagebreak -->
 
 ## 1. Entornos de Despliegue
 
