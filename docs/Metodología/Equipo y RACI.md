@@ -10,11 +10,11 @@
 
 <picture>
 <source media="(prefers-color-scheme: dark)"
-srcset="../../assets/img/logo-bookmerang-dark.png">
+srcset="../assets/img/logo-bookmerang-dark.png">
 <source media="(prefers-color-scheme: light)"
-srcset="../../assets/img/logo-bookmerang-light.png">
+srcset="../assets/img/logo-bookmerang-light.png">
 <img
-src="../../assets/img/logo-bookmerang-light.png"
+src="../assets/img/logo-bookmerang-light.png"
 alt="Bookmerang logo"
 width="320"
 />
@@ -38,11 +38,11 @@ text-align: center;
 <div>
 <picture>
 <source media="(prefers-color-scheme: dark)"
-srcset="../../assets/img/us-etsi-inf-dark.png">
+srcset="../assets/img/us-etsi-inf-dark.png">
 <source media="(prefers-color-scheme: light)"
-srcset="../../assets/img/us-etsi-inf-light.png">
+srcset="../assets/img/us-etsi-inf-light.png">
 <img
-src="../../assets/img/us-etsi-inf-light.png"
+src="../assets/img/us-etsi-inf-light.png"
 alt="ETSII – Universidad de Sevilla"
 width="180"
 />
