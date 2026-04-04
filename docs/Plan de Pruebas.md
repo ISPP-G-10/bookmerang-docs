@@ -45,7 +45,7 @@ Estas pruebas son fundamentales para garantizar que la lógica de negocio y la i
 ### 3.1. Arquitectura y Herramientas
 
 - **Framework de Pruebas:** **xUnit** es el estándar para la definición y ejecución de tests en el ecosistema .NET del proyecto.
-- **Base de Datos de Prueba:** Se utiliza **Testcontainers con PostgreSQL**. Esta elección es crítica, ya que permite probar contra una base de datos real y efímera, validando no solo la lógica de la aplicación, sino también el SQL generado por Entity Framework Core y la correcta configuración de los mapeos.
+- **Base de Datos de Prueba:** Se utiliza **Testcontainers con PostgreSQL**. Esta elección es crítica, ya que permite probar contra una base de datos real y efímera. El proveedor de base de datos **Npgsql** es utilizado por Entity Framework Core para traducir las consultas de LINQ a SQL compatible con PostgreSQL, validando no solo la lógica de la aplicación, sino también el SQL generado y la correcta configuración de los mapeos.
 - **Simulaciones (Mocks):** La librería **Moq** se emplea para aislar las dependencias externas (ej. servicios de terceros) que no son objeto de la prueba de integración.
 
 ### 3.2. Cobertura de Pruebas por Módulo Funcional
