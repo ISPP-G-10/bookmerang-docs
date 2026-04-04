@@ -75,14 +75,13 @@ width="180"
   - [3.1. Estrategia de Captación (Sistema de Tiers)](#31-estrategia-de-captación-sistema-de-tiers)
   - [3.2. Segmentación de los Usuarios Piloto actuales](#32-segmentación-de-los-usuarios-piloto-actuales)
 - [4. Escenarios de Prueba](#4-escenarios-de-prueba)
-- [5. Plan de Pruebas y Encuesta](#5-plan-de-pruebas-y-encuesta)
-- [6. Plan de Comunicaciones](#6-plan-de-comunicaciones)
-- [7. Ejecución del Piloto](#7-ejecución-del-piloto)
-- [8. Evaluación de Aprendizajes](#8-evaluación-de-aprendizajes)
-- [9. Gestión, Expansión y Evolución de Usuarios Piloto](#9-gestión-expansión-y-evolución-de-usuarios-piloto)
-  - [9.1. Gestión Continua de los Usuarios Piloto](#91-gestión-continua-de-los-usuarios-piloto)
-  - [9.2. Expansión y Ampliación de la Lista de Usuarios](#92-expansión-y-ampliación-de-la-lista-de-usuarios)
-  - [9.3. Continuidad más allá del MVP (Nuevas Funcionalidades)](#93-continuidad-más-allá-del-mvp-nuevas-funcionalidades)
+- [5. Plan de Comunicaciones](#5-plan-de-comunicaciones)
+- [6. Ejecución del Piloto](#6-ejecución-del-piloto)
+- [7. Evaluación de Aprendizajes](#7-evaluación-de-aprendizajes)
+- [8. Gestión, Expansión y Evolución de Usuarios Piloto](#8-gestión-expansión-y-evolución-de-usuarios-piloto)
+  - [8.1. Gestión Continua de los Usuarios Piloto](#81-gestión-continua-de-los-usuarios-piloto)
+  - [8.2. Expansión y Ampliación de la Lista de Usuarios](#82-expansión-y-ampliación-de-la-lista-de-usuarios)
+  - [8.3. Continuidad más allá del MVP (Nuevas Funcionalidades)](#83-continuidad-más-allá-del-mvp-nuevas-funcionalidades)
 
 ---
 
@@ -245,43 +244,7 @@ Se han diseñado 4 escenarios CORE obligatorios para cada usuario:
 - **Escenario C: Discovery (El Match)**
   - **Acción:** Navegación en el Matcher, Swipes (izquierda/derecha) y logro de "Match recíproco".
   - **Objetivo:** Validar la geolocalización y la visualización de tarjetas.
-- **Escenario D: Cierre del Ciclo (Chat & Intercambio)**
-  - **Acción:** Negociación de lugar/hora y pulsación de "Aceptar Intercambio".
-  - **Objetivo:** Confirmar el cambio de estado del libro y la finalización del flujo.
-
-## 5. Plan de Pruebas y Encuesta
-
-### Métricas de Éxito (KPIs)
-
-Para medir la satisfacción, utilizaremos el Net Promoter Score (NPS) en la encuesta final:
-
-- **Promotores (9-10):** El flujo es excelente.
-- **Pasivos (7-8):** Funciona, pero falta "magia" o hay fricción leve.
-- **Detractores (0-6):** Fallos críticos o propuesta de valor no entendida.
-
-### Cuestionario de Feedback
-
-#### Bloque A: Usabilidad
-
-- ¿Te resultó sencillo configurar tus géneros literarios y tu ubicación al registrarte?
-- Al usar el escáner de ISBN, ¿el sistema reconoció el libro a la primera o tuviste que introducir los datos manualmente?
-- ¿El proceso de subir las fotos del libro te pareció rápido o tedioso? ¿Pudiste usar la cámara directamente sin problemas?
-- ¿Dudaste en algún momento sobre qué 'Estado' seleccionar para tu libro?
-- En la pantalla de Matcher, ¿la información de la tarjeta (título, portada, distancia) fue suficiente para decidir si deslizabas a la izquierda o derecha, o echaste en falta algún dato?
-- ¿Te quedó claro cuándo el intercambio estaba oficialmente 'Aceptado' por ambas partes?
-
-#### Bloque B: Valor Diferencial
-
-- Al usar el Matcher, ¿sentiste que el proceso fue más ágil y menos estresante que negociar un precio de venta en apps de segunda mano (como Wallapop/Vinted)?
-- ¿El sistema de deslizar tarjetas (Swipe) te resultó una forma efectiva de descubrir libros cercanos, o preferirías un buscador tradicional?
-- Durante el chat, ¿sentiste que solo coordinabas una entrega o que estabas conectando con otro lector con gustos afines?
-- ¿Te motivó más la idea de liberar espacio en tu estantería o la de conseguir un libro nuevo gratis?
-
-#### Bloque C: Bugs Técnicos
-
-- Reporte libre de fallos (cierres inesperados, fotos que no cargan, ubicación errónea, etcétera).
-
-## 6. Plan de Comunicaciones
+## 5. Plan de Comunicaciones
 
 Dado que estamos en la fase de Tier 1 (Círculo Cercano), la comunicación se basará en la confianza y la proximidad para reducir la fricción del usuario.
 
@@ -305,7 +268,7 @@ Dado que estamos en la fase de Tier 1 (Círculo Cercano), la comunicación se ba
 
 Para los usuarios de Tier 2, la comunicación se lleva a cabo de forma presencial la primera vez para establecer contacto con los negocios, y si estos deciden formar parte de los usuarios pilotos, se les solicita un correo electrónico con el que poder comunicarles todo lo necesario.
 
-## 7. Ejecución del Piloto
+## 6. Ejecución del Piloto
 
 ### Cronograma de Ejecución (4 Días)
 
@@ -323,7 +286,7 @@ Para los usuarios de Tier 2, la comunicación se lleva a cabo de forma presencia
 - **Día 4: Feedback**
   - Envío y cumplimentación de la encuesta a través de su enlace directo del equipo.
 
-## 8. Evaluación de Aprendizajes
+## 7. Evaluación de Aprendizajes
 
 Al finalizar el Día 4, el equipo realizará una sesión de "Review" para procesar los datos:
 
@@ -332,18 +295,18 @@ Al finalizar el Día 4, el equipo realizará una sesión de "Review" para proces
 3. **Validación de Hipótesis:** Confirmar si se cumple la premisa de "Océano Azul" (basado en Bloque B).
 4. **Priorización de Bugs:** Clasificar los errores técnicos del Bloque C para el siguiente Sprint de corrección.
 
-## 9. Gestión, Expansión y Evolución de Usuarios Piloto
+## 8. Gestión, Expansión y Evolución de Usuarios Piloto
 
 Este apartado define cómo se administrará el ciclo de vida de los usuarios piloto actuales, las estrategias para escalar la base de usuarios hacia nuevos Tiers y la hoja de ruta para el testeo de futuras funcionalidades una vez superada la fase inicial.
 
-### 9.1. Gestión Continua de los Usuarios Piloto
+### 8.1. Gestión Continua de los Usuarios Piloto
 
 Para asegurar un seguimiento efectivo de los 99 usuarios confirmados en el Tier 1, se implementarán las siguientes acciones de gestión:
 
 - **Fidelización y Recompensas:** Los usuarios piloto fundadores (Tier 1 y Tier 2) recibirán un identificador especial en sus perfiles como agradecimiento por su alta tolerancia a fallos en esta fase inicial.
 - **Transición de Canales:** Aunque en la fase actual la comunicación se basa en el WhatsApp personal de los miembros del equipo y un formulario de Google, progresivamente se canalizará a los usuarios hacia formularios de feedback integrados en la propia aplicación para automatizar la recolección de métricas.
 
-### 9.2. Expansión y Ampliación de la Lista de Usuarios
+### 8.2. Expansión y Ampliación de la Lista de Usuarios
 
 Una vez validado el flujo principal de valor (intercambio físico de libros) sin errores, se procederá a escalar la captación de forma iterativa:
 
@@ -351,7 +314,7 @@ Una vez validado el flujo principal de valor (intercambio físico de libros) sin
 - **Creación de un Tier 3 (Comunidad Universitaria):** Tras estabilizar la app con el Tier 2, se lanzará una campaña de captación en la ETSII y otras facultades. El objetivo será atraer masivamente a los perfiles de "Usuario A (Lector Estudiante/Económico)" y "Usuario C (Lector Económico)" mediante cartelería física y redes sociales.
 - **Sistema de Referidos:** Se habilitará un sistema temporal de invitaciones exclusivas donde los usuarios actuales podrán invitar a 2 o 3 personas de su entorno, asegurando un crecimiento orgánico y controlado de la red.
 
-### 9.3. Continuidad más allá del MVP (Nuevas Funcionalidades)
+### 8.3. Continuidad más allá del MVP (Nuevas Funcionalidades)
 
 El objetivo de esta prueba piloto se centra exclusivamente en las funcionalidades CORE del MVP. A medida que el desarrollo avance hacia las funcionalidades sociales complejas, el protocolo de pruebas evolucionará de la siguiente manera:
 
