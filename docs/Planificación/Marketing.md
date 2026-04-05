@@ -264,10 +264,19 @@ Para que el sistema sea profesional, el logo debe tener varias versiones:
 
 1. Logo principal: uso general (web, presentaciones, anuncio)
 
+![Logo principal](../assets/img/marketing/logo1.png)
 
 2. Logo reducido: uso como icono de app o favicon
+
+![Logo reducido](../assets/img/marketing/logo2.png)
+
 3. Logo horizontal: para banners o cabeceras
+
+![Logo horizontal](../assets/img/marketing/logo3.png)
+
 4. Logo sobre fondo oscuro: versión adaptada en blanco o tonos claros
+
+![Logo sobre fondo oscuro](../assets/img/marketing/logo4.png)
 
 
 ## 4.3. Paleta de colores
@@ -411,12 +420,16 @@ tarjeta de libro dentro del sistema de Matcher.
 
 
 Función: Introducir la mecánica principal de forma clara y visual.
+
+![Plano 1](../assets/img/marketing/plano1.png)
 **Plano 2 - Notificación de match (3–6 s)**
 Aparece una notificación flotante (overlay) sobre el móvil: **“Match Found!”**
 La cámara abre plano o realiza un rack focus hacia el rostro de la protagonista, que sonríe.
 Importante: la notificación no rompe la perspectiva del móvil, aparece como elemento
 integrado en el espacio
 Función: Generar emoción y recompensa inmediata.
+
+![Plano 2](../assets/img/marketing/plano2.png)
 **Plano 3 - Desplazamiento hacia el BookSpot (6–11 s)**
 Plano medio/seguimiento desde atrás. La protagonista se levanta y camina de forma natural
 hacia otra persona situada junto al BookSpot.
@@ -426,6 +439,8 @@ hacia otra persona situada junto al BookSpot.
 ● entorno cálido (librería-café)
 ● presencia sutil del branding
 Función: Conectar mundo digital con mundo físico.
+
+![Plano 3](../assets/img/marketing/plano3.png)
 **Plano 4 - Intercambio de libros (11–15 s)**
 Plano cerrado de manos. Ambas personas intercambian libros al mismo tiempo.
 ● textura real del papel
@@ -436,6 +451,8 @@ Sin número, para mantener elegancia visual.
 Función: Mostrar el momento clave del producto:
 ● el intercambio + recompensa.
 
+![Plano 4](../assets/img/marketing/plano4.png)
+
 
 **Plano 5 - Apertura del entorno (15–17 s)**
 Plano amplio que revela el espacio completo del BookSpot.
@@ -444,6 +461,8 @@ Plano amplio que revela el espacio completo del BookSpot.
 ● sensación de comunidad
 El plano comienza a suavizarse (ligero blur o transición).
 Función: Escalar la experiencia individual a algo colectivo.
+
+![Plano 5](../assets/img/marketing/plano5.png)
 **Plano 6 - Cierre de marca (17–20 s)**
 Aparece el logo de Bookmerang en el centro.
 
@@ -455,6 +474,8 @@ Debajo: **“Que los libros dejen de acumular polvo y empiecen a acumular lector
 Finalmente: popup de descarga
 ● App Store / Google Play
 Función: Cerrar con identidad clara + llamada a la acción.
+
+![Plano 6](../assets/img/marketing/plano6.png)
 
 ## 5.4. Mensaje final y CTA
 
