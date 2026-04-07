@@ -85,7 +85,7 @@
 |:-------:|:----------:|---------------|------------------------|
 | v1.0    | 01/04/2026 | Peter Carter  | Primera versión |
 | v1.1    | 04/04/2026 | Peter Carter  | Adición de riesgos y asociación de riesgos con las métricas |
-| v1.2    | 05/04/2026 | Peter Carter  | Reformulación de P-TEC-09 con métricas binarias de control de ramas y revisión por pares. Renombrado P-ORG-04 a Scope Creep con métrica y validación específica mediante auditoría de Backlog. Añadida evidencia de integración Git en sección 4.1. |
+| v1.2    | 05/04/2026 | Peter Carter  | Reformulación de P-TEC-09 con métricas binarias de control de ramas y revisión por pares. Renombrado P-ORG-03 a Scope Creep con métrica y validación específica mediante auditoría de Backlog. Añadida evidencia de integración Git en sección 4.1. |
 | v1.3    | 07/04/2026 | Peter Carter  | Clarificación de los umbrales  y cambios en riesgo de créditos de Azure|
 
 ---
@@ -105,14 +105,13 @@ Este panel integra la evolución desde las medidas de urgencia hacia las solucio
 | **P-TEC-07** | Foco en MVP | Corrección al vuelo. | MoSCoW y definición estricta. | Puntos dedicados al Core. | > 80% de puntos del Sprint. | En ejecución |
 | **P-TEC-08** | Límites Técnicos Expo | Parches por ritmo exigido. | Definición de módulos y GPS nativo. | Disponibilidad GPS/Mapas. | 100% operativos. | Completado |
 | **P-TEC-09** | Conflictos y falta de revisión en Git | Resolución manual crisis. | Prohibición de commits directos / Revisión por pares. | Commits directos / PRs sin revisar. | 0 commits directos / 100% PRs revisadas. | En ejecución |
-| **P-ORG-01** | Tensiones / Malos rollos | Aislamiento temporal. | Team Building y compañerismo. | Bloqueos por falta de cohesión. | 0 (en retrospectivas). | Completado |
-| **P-ORG-02** | Sobrecarga / Sprint | Esfuerzo agónico. | Planning Poker y Burndown Chart. | Variación de Velocidad / Distribución Burndown. | Desviación < 15% y < 30% puntos en últimas 48h. | En observación |
-| **P-ORG-03** | Comunicación F/B | Sincronización verbal. | Documentación Swagger/OpenAPI. | Errores integración API. | < 5% fallos de interface. | Completado |
-| **P-ORG-04** | Scope Creep (Alcance) | Recorte de tareas no críticas. | Derivación de ideas al Backlog y foco MVP. | Funciones extra en desarrollo. | 0 funciones fuera del MVP. | En ejecución |
-| **P-ORG-05** | Disponibilidad equipo | Reasignación tareas. | Avisos de antelación y rotación. | Tareas bloqueadas. | 0 tareas críticas bloqueadas. | En ejecución |
+| **P-ORG-01** | Sobrecarga / Sprint | Esfuerzo agónico. | Planning Poker y Burndown Chart. | Variación de Velocidad / Distribución Burndown. | Desviación < 15% y < 30% puntos en últimas 48h. | En observación |
+| **P-ORG-02** | Comunicación F/B | Sincronización verbal. | Documentación Swagger/OpenAPI. | Errores integración API. | < 5% fallos de interface. | Completado |
+| **P-ORG-03** | Scope Creep (Alcance) | Recorte de tareas no críticas. | Derivación de ideas al Backlog y foco MVP. | Funciones extra en desarrollo. | 0 funciones fuera del MVP. | En ejecución |
+| **P-ORG-04** | Disponibilidad equipo | Reasignación tareas. | Avisos de antelación y rotación. | Tareas bloqueadas. | 0 tareas críticas bloqueadas. | En ejecución |
 | **P-INF-01** | Complejidad Azure | Despliegue manual. | Despliegue temprano cloud. | Incidencias despliegue. | 0 tras puesta en marcha. | Mitigado |
 | **P-INF-02** | Interrupciones | Uso entornos alternativos. | Alertas y monitorización Azure. | Tiempo de actividad (Uptime). | Disponibilidad >= 99%. | En ejecución |
-| **P-INF-03** | Créditos Azure | Entornos gratuitos. | Solo prod. y uso de 3 cuentas. | Saldo de créditos por cuenta. | Gasto < 300 € por cuenta. | Mitigado |
+| **P-INF-03** | Créditos Azure | Entornos gratuitos. | Solo prod. y uso de 3 cuentas. | Saldo de créditos por cuenta. | Gasto < 100 € por cuenta. | Mitigado |
 
 ---
 
@@ -134,17 +133,16 @@ Este apartado detalla los indicadores clave de desempeño (KPI) utilizados para 
 
 ### 3.2. Métricas Organizativas y de Gestión
 
-- **P-ORG-01 (Cohesión y Salud del Equipo):** Se cuantifica por el Número de bloqueos interpersonales registrados en las retrospectivas de Sprint. Un bloqueo interpersonal se define como cualquier situación de conflicto, falta de comunicación o tensión entre miembros del equipo que haya impedido o ralentizado el avance de una tarea de forma documentada. Se contabilizan únicamente los incidentes que queden recogidos explícitamente en el acta de retrospectiva. El umbral de éxito es 0 bloqueos registrados por Sprint.
-- **P-ORG-02 (Sobrecarga y Velocity):** Se utilizan dos indicadores complementarios. El primero es la Variación de Velocity, calculada como la diferencia porcentual entre los puntos comprometidos al inicio del Sprint y los puntos completados al cierre; el umbral es una desviación inferior al 15%. El segundo es la Distribución del trabajo, verificada mediante el Burndown Chart: se considera exitoso si menos del 30% de los puntos totales del Sprint se completan en las últimas 48 horas previas a la entrega, lo que evidencia que el Planning Poker ha generado estimaciones realistas y sostenibles.
-- **P-ORG-03 (Comunicación Front vs Back):** Se utiliza la Tasa de errores en la integración de la API, calculada como el porcentaje de endpoints que producen respuestas inesperadas (tipos de datos incorrectos, campos ausentes o códigos de error no contemplados en el contrato Swagger) sobre el total de endpoints probados en cada ciclo de integración: (endpoints con error / total endpoints probados) × 100. El umbral es inferior al 5%.
-- **P-ORG-04 (Control de Alcance):** Se mide mediante el conteo de funcionalidades en desarrollo activo que no figuren en la lista de requisitos "Must Have" del MVP, definida y congelada al inicio del proyecto en el Product Backlog. Una funcionalidad se considera "fuera del MVP" si tiene tareas activas en el tablero y no está incluida en dicha lista de referencia. El umbral de éxito es 0 funcionalidades en ese estado, validando que cualquier idea nueva ha sido derivada correctamente al Backlog como ítem "Post-MVP".
-- **P-ORG-05 (Disponibilidad del equipo):** Se monitoriza el número de tareas bloqueadas por ausencias no previstas. A efectos de esta métrica, una tarea se considera **crítica** si está en el Sprint activo, tiene dependencias directas con otras tareas en curso y su bloqueo impide el avance de al menos otro miembro del equipo. El umbral es de 0 tareas críticas bloqueadas según esta definición.
+- **P-ORG-01 (Sobrecarga y Velocity):** Se utilizan dos indicadores complementarios. El primero es la Variación de Velocity, calculada como la diferencia porcentual entre los puntos comprometidos al inicio del Sprint y los puntos completados al cierre; el umbral es una desviación inferior al 15%. El segundo es la Distribución del trabajo, verificada mediante el Burndown Chart: se considera exitoso si menos del 30% de los puntos totales del Sprint se completan en las últimas 48 horas previas a la entrega, lo que evidencia que el Planning Poker ha generado estimaciones realistas y sostenibles.
+- **P-ORG-02 (Comunicación Front vs Back):** Se utiliza la Tasa de errores en la integración de la API, calculada como el porcentaje de endpoints que producen respuestas inesperadas (tipos de datos incorrectos, campos ausentes o códigos de error no contemplados en el contrato Swagger) sobre el total de endpoints probados en cada ciclo de integración: (endpoints con error / total endpoints probados) × 100. El umbral es inferior al 5%.
+- **P-ORG-03 (Control de Alcance):** Se mide mediante el conteo de funcionalidades en desarrollo activo que no figuren en la lista de requisitos "Must Have" del MVP, definida y congelada al inicio del proyecto en el Product Backlog. Una funcionalidad se considera "fuera del MVP" si tiene tareas activas en el tablero y no está incluida en dicha lista de referencia. El umbral de éxito es 0 funcionalidades en ese estado, validando que cualquier idea nueva ha sido derivada correctamente al Backlog como ítem "Post-MVP".
+- **P-ORG-04 (Disponibilidad del equipo):** Se monitoriza el número de tareas bloqueadas por ausencias no previstas. A efectos de esta métrica, una tarea se considera **crítica** si está en el Sprint activo, tiene dependencias directas con otras tareas en curso y su bloqueo impide el avance de al menos otro miembro del equipo. El umbral es de 0 tareas críticas bloqueadas según esta definición.
 
 ### 3.3. Métricas de Infraestructura y Costes
 
 - **P-INF-01 (Complejidad Azure Ops):** Se mide por el número de incidencias técnicas tras el despliegue. A efectos de esta métrica, una incidencia se considera **crítica** si provoca una caída total del servicio, pérdida o corrupción de datos, o impide el acceso de los usuarios a las funcionalidades del MVP. El umbral es de 0 incidencias críticas según esta definición tras cada despliegue estable.
 - **P-INF-02 (Interrupciones de servicio):** Se utiliza el Tiempo de actividad del servicio (Uptime) medido por Azure Monitor durante los periodos de evaluación y demostración del proyecto. El umbral es una disponibilidad igual o superior al 99% en dichos periodos, lo que equivale a un máximo de aproximadamente 7 minutos de caída por cada 12 horas de ventana de evaluación. Fuera de estos periodos, se acepta una disponibilidad menor derivada del uso de entornos de bajo coste.
-- **P-INF-03 (Créditos Azure):** Se controla el saldo de créditos disponibles en cada una de las tres cuentas de Azure habilitadas para el despliegue. El umbral de éxito es que ninguna de las cuentas supere un gasto de 300 €, garantizando así la continuidad del servicio hasta el cierre del proyecto sin agotar los créditos disponibles.
+- **P-INF-03 (Créditos Azure):** Se controla el saldo de créditos disponibles en cada una de las tres cuentas de Azure habilitadas para el despliegue. El umbral de éxito es que ninguna de las cuentas supere un gasto de 100 €, garantizando así la continuidad del servicio hasta el cierre del proyecto sin agotar los créditos disponibles.
 
 ---
 
