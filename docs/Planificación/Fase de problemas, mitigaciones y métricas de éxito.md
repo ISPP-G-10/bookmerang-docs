@@ -164,7 +164,7 @@ Para asegurar que las mitigaciones han sido efectivas, se han establecido los si
 
 ### 4.2. Verificación de Gestión y Cohesión
 
-- **Validación Social y del Equipo:** Se verifica mediante las Weekly Retrospectives. La ausencia de bloqueos interpersonales registrados en estas actas confirma la efectividad de las dinámicas de grupo.
+ 
 - **Control de Planificación (Velocity y Planificación Realista):** Se valida mediante dos comprobaciones. Primera: el Gráfico de Velocidad, verificando que la diferencia entre puntos comprometidos y completados al cierre del Sprint no supera el 15%. Segunda: el Burndown Chart, verificando que menos del 30% de los puntos del Sprint se completen en las últimas 48 horas previas a la entrega. Ambas condiciones deben cumplirse para considerar el indicador satisfecho.
 - **Verificación de la Comunicación (Swagger):** Se demuestra mediante el Contrato Swagger UI operativo y accesible. La validación se realiza comparando las interfaces del Frontend y el Backend en las pruebas de integración; un fallo inferior al 5% confirma que Swagger actúa como fuente de verdad única.
 - **Control de Alcance (Scope Creep):** Se verifica mediante una auditoría del Backlog de Producto. La evidencia de que esta mitigación funciona es que todas las funcionalidades detectadas fuera del núcleo funcional (MVP) están correctamente etiquetadas como "Post-MVP" o "Backlog" y no presentan actividad en el historial de desarrollo, garantizando que el equipo no ha desviado recursos del objetivo principal.
