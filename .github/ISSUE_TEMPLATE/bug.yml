@@ -1,0 +1,105 @@
+name: "🐛 Error / Corrección"
+description: "Reportar información incorrecta, desactualizada o un problema en la documentación"
+title: "[Docs] - "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Error / Corrección
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "📝 Descripción del error"
+      description: "¿Qué está mal? ¿Dónde se encuentra?"
+      placeholder: |
+        Ejemplo: En el acta del 15 de marzo figura que la reunión duró 1 hora, pero en realidad duró 30 minutos. / El enlace al documento de planificación en S1.md está roto.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ubicacion
+    attributes:
+      label: "📌 Ubicación del error"
+      placeholder: |
+        Ej:
+        - Archivo: docs/Planificación/Planificación en 3 sprints.md
+        - Sección: "Semana 3 — objetivos"
+        - Línea aprox.: 42
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tipo-error
+    attributes:
+      label: "🔎 Tipo de error"
+      options:
+        - "Información incorrecta u obsoleta"
+        - "Enlace roto"
+        - "Documento faltante"
+        - "Error de formato o maquetación"
+        - "Inconsistencia entre documentos"
+        - "Otro"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modulo
+    attributes:
+      label: "📍 Sección"
+      options:
+        - "Entregables (DP / S1 / S2 / S3)"
+        - "Actas de reunión"
+        - "Commitment Agreements"
+        - "Planificación"
+        - "Metodología"
+        - "Estudios & Análisis"
+        - "Plan de Pruebas"
+        - "Resumen Ejecutivo"
+        - "➕ Otro (especificar abajo)"
+    validations:
+      required: true
+
+  - type: input
+    id: otro-modulo
+    attributes:
+      label: "➕ Otra sección"
+      placeholder: "Ej: Manual de usuario piloto"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: "⚠️ Prioridad"
+      options:
+        - "🔥 Crítico — Afecta a una entrega inminente"
+        - "🔴 Alta — Información incorrecta que puede llevar a confusión"
+        - "🟡 Media — Error presente pero con contexto suficiente para entenderlo"
+        - "🟢 Baja — Errata menor, formato o estilo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: "⏳ Sprint"
+      options:
+        - "DP"
+        - "Sprint 1"
+        - "Sprint 2"
+        - "Sprint 3"
+        - "PPL"
+        - "WPL"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "📎 Capturas / info adicional (opcional)"
+      placeholder: "Arrastra capturas de pantalla, pega el texto incorrecto o añade cualquier contexto útil aquí"
+    validations:
+      required: false
