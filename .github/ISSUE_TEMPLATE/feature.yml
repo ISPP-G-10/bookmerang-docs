@@ -1,0 +1,82 @@
+name: "📋 Nueva tarea / Mejora"
+description: "Proponer un nuevo documento, sección o mejora en la documentación"
+title: "[Docs] - "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Nueva tarea / Mejora
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "🔍 Descripción"
+      description: "¿Qué hay que documentar o mejorar y por qué?"
+      placeholder: |
+        Ejemplo: Falta una sección que explique el proceso de onboarding de usuarios piloto. Sería útil tenerla para el Sprint 2.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modulo
+    attributes:
+      label: "📍 Sección"
+      options:
+        - "Entregables (DP / S1 / S2 / S3)"
+        - "Actas de reunión"
+        - "Commitment Agreements"
+        - "Planificación"
+        - "Metodología"
+        - "Estudios & Análisis"
+        - "Plan de Pruebas"
+        - "Resumen Ejecutivo"
+        - "➕ Otro (especificar abajo)"
+    validations:
+      required: true
+
+  - type: input
+    id: otro-modulo
+    attributes:
+      label: "➕ Otra sección"
+      placeholder: "Ej: Manual de usuario piloto"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: "⚠️ Prioridad"
+      options:
+        - "🔥 Urgente — Bloquea la entrega o revisión"
+        - "🔴 Alta — Debería hacerse lo antes posible"
+        - "🟡 Media — Importante pero no urgente"
+        - "🟢 Baja — Mejora menor o detalle de formato"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: "⏳ Sprint"
+      options:
+        - "DP"
+        - "Sprint 1"
+        - "Sprint 2"
+        - "Sprint 3"
+        - "PPL"
+        - "WPL"
+    validations:
+      required: true
+
+  - type: textarea
+    id: archivos
+    attributes:
+      label: "📁 Documentos / secciones afectadas (opcional)"
+      placeholder: |
+        Ej:
+        - docs/Metodología/proceso-desarrollo.md
+        - docs/Planificación/Planificación en 3 sprints.md
+    validations:
+      required: false
