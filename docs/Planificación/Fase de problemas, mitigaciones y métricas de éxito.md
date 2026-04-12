@@ -68,14 +68,22 @@
 
 - [1. Historial de Versiones](#1-historial-de-versiones)
 - [2. Cuadro de Mando Unificado: Problemas, Soluciones y Métricas](#2-cuadro-de-mando-unificado-problemas-soluciones-y-métricas)
-- [3. Métricas de Solución y Umbrales](#3-métricas-de-solución-y-umbrales)
-  - [3.1. Métricas Técnicas y de Desarrollo](#31-métricas-técnicas-y-de-desarrollo)
-  - [3.2. Métricas Organizativas y de Gestión](#32-métricas-organizativas-y-de-gestión)
-  - [3.3. Métricas de Infraestructura y Costes](#33-métricas-de-infraestructura-y-costes)
-- [4. Validación y Verificación](#4-validación-y-verificación)
-  - [4.1. Verificación de Calidad Técnica y Desarrollo](#41-verificación-de-calidad-técnica-y-desarrollo)
-  - [4.2. Verificación de Gestión y Cohesión](#42-verificación-de-gestión-y-cohesión)
-  - [4.3. Verificación de Infraestructura y Viabilidad](#43-verificación-de-infraestructura-y-viabilidad)
+  - [2.1. Problemas Organizativos y de Gestión](#21-problemas-organizativos-y-de-gestión)
+  - [2.2. Problemas de Comunicación Interpersonal y Cohesión de Equipo](#22-problemas-de-comunicación-interpersonal-y-cohesión-de-equipo)
+  - [2.3. Problemas de Rendimiento Individual](#23-problemas-de-rendimiento-individual)
+- [3. Definiciones Previas](#3-definiciones-previas)
+  - [3.1. Rúbrica de Calidad del Trabajo](#31-rúbrica-de-calidad-del-trabajo)
+  - [3.2. Definición de Decisión Documentable](#32-definición-de-decisión-documentable)
+  - [3.3. Definición de Conflicto Escalado](#33-definición-de-conflicto-escalado)
+  - [3.4. Definición del Índice de Rendimiento Relativo (IRR)](#34-definición-del-índice-de-rendimiento-relativo-irr)
+- [4. Métricas de Solución y Umbrales](#4-métricas-de-solución-y-umbrales)
+  - [4.1. Métricas Organizativas y de Gestión](#41-métricas-organizativas-y-de-gestión)
+  - [4.2. Métricas de Comunicación Interpersonal y Cohesión de Equipo](#42-métricas-de-comunicación-interpersonal-y-cohesión-de-equipo)
+  - [4.3. Métricas de Rendimiento Individual](#43-métricas-de-rendimiento-individual)
+- [5. Validación y Verificación](#5-validación-y-verificación)
+  - [5.1. Verificación de Gestión y Cohesión](#51-verificación-de-gestión-y-cohesión)
+  - [5.2. Verificación de Comunicación y Convivencia](#52-verificación-de-comunicación-y-convivencia)
+  - [5.3. Verificación de Rendimiento Individual](#53-verificación-de-rendimiento-individual)
 
 ---
 
@@ -83,95 +91,167 @@
 
 | Versión | Fecha      | Participantes | Resumen de los cambios |
 |:-------:|:----------:|---------------|------------------------|
-| v1.0    | 01/04/2026 | Peter Carter  | Primera versión |
-| v1.1    | 04/04/2026 | Peter Carter  | Adición de riesgos y asociación de riesgos con las métricas |
-| v1.2    | 05/04/2026 | Peter Carter  | Reformulación de P-TEC-09 con métricas binarias de control de ramas y revisión por pares. Renombrado P-ORG-03 a Scope Creep con métrica y validación específica mediante auditoría de Backlog. Añadida evidencia de integración Git en sección 4.1. |
-| v1.3    | 07/04/2026 | Peter Carter  | Clarificación de los umbrales  y cambios en riesgo de créditos de Azure|
+| v1.0    | 01/04/2026 | Peter Carter  | Primera versión. |
+| v1.1    | 04/04/2026 | Peter Carter  | Adición de riesgos y asociación de riesgos con las métricas. |
+| v1.3    | 07/04/2026 | Peter Carter  | Clarificación de los umbrales de los problemas organizativos. |
+| v1.4    | 12/04/2026 | Peter Carter  | Ampliación con problemas de comunicación interpersonal y rendimiento individual. |
+| v1.5    | 12/04/2026 | Peter Carter  | Incorporación de definiciones previas para garantizar que todos los umbrales sean objetivamente cuantificables. |
 
 ---
 
 ## 2. Cuadro de Mando Unificado: Problemas, Soluciones y Métricas
 
-Este panel integra la evolución desde las medidas de urgencia hacia las soluciones estructurales, vinculando cada riesgo con su indicador de éxito.
+Este panel integra la evolución desde las medidas de urgencia hacia las soluciones estructurales, vinculando cada riesgo con su indicador de éxito. Los términos marcados con (→ §3) quedan definidos con precisión en el apartado siguiente.
+
+### 2.1. Problemas Organizativos y de Gestión
 
 | ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
 |:---:|---|---|---|---|---|:---:|
-| **P-TEC-01** | Curva .NET / C# | Refactorización reactiva. | Sesiones técnicas y revisión de código. | Tasa éxito Pull Requests. | > 90% aprobadas (1ª rev). | En ejecución |
-| **P-TEC-02** | Curva Aprendizaje Expo | Consultas rápidas doc. | Formación interna y prototipo básico. | Tasa de errores de sintaxis. | < 15% de builds fallidos por Sprint. | Completado |
-| **P-TEC-03** | Dificultad Supabase | Consultas rápidas doc. | Tutoriales y soporte dedicado. | Consumo de recursos. | No superar plan gratuito. | Completado |
-| **P-TEC-04** | PostGIS / Matching | Lógica simplificada. | Formación PostGIS y test de carga. | Latencia de Matching. | Consultas en < 500 ms. | En ejecución |
-| **P-TEC-05** | Conocimiento Requisitos | Consultas puntuales. | Q&A de requisitos y lectura profunda. | Tasa de retrabajo (Rework). | < 10% tareas devueltas. | Completado |
-| **P-TEC-06** | Arq. Distribuida | Consultas ad-hoc. | Diagramas de arq. y tutorías. | Éxito en Integración. | 100% módulos integrados. | Completado |
-| **P-TEC-07** | Foco en MVP | Corrección al vuelo. | MoSCoW y definición estricta. | Puntos dedicados al Core. | > 80% de puntos del Sprint. | En ejecución |
-| **P-TEC-08** | Límites Técnicos Expo | Parches por ritmo exigido. | Definición de módulos y GPS nativo. | Disponibilidad GPS/Mapas. | 100% operativos. | Completado |
-| **P-TEC-09** | Conflictos y falta de revisión en Git | Resolución manual crisis. | Prohibición de commits directos / Revisión por pares. | Commits directos / PRs sin revisar. | 0 commits directos / 100% PRs revisadas. | En ejecución |
-| **P-ORG-01** | Sobrecarga / Sprint | Esfuerzo agónico. | Planning Poker y Burndown Chart. | Variación de Velocidad / Distribución Burndown. | Desviación < 15% y < 30% puntos en últimas 48h. | En observación |
-| **P-ORG-02** | Comunicación F/B | Sincronización verbal. | Documentación Swagger/OpenAPI. | Errores integración API. | < 5% fallos de interface. | Completado |
-| **P-ORG-03** | Scope Creep (Alcance) | Recorte de tareas no críticas. | Derivación de ideas al Backlog y foco MVP. | Funciones extra en desarrollo. | 0 funciones fuera del MVP. | En ejecución |
-| **P-ORG-04** | Disponibilidad equipo | Reasignación tareas. | Avisos de antelación y rotación. | Tareas bloqueadas. | 0 tareas críticas bloqueadas. | En ejecución |
-| **P-INF-01** | Complejidad Azure | Despliegue manual. | Despliegue temprano cloud. | Incidencias despliegue. | 0 tras puesta en marcha. | Mitigado |
-| **P-INF-02** | Interrupciones | Uso entornos alternativos. | Alertas y monitorización Azure. | Tiempo de actividad (Uptime). | Disponibilidad >= 99%. | En ejecución |
-| **P-INF-03** | Créditos Azure | Entornos gratuitos. | Solo prod. y uso de 3 cuentas. | Saldo de créditos por cuenta. | Gasto < 100 € por cuenta. | Mitigado |
+| **P-ORG-01** | Sobrecarga / Sprint | Esfuerzo agónico. | Planning Poker y Burndown Chart. | Variación de Velocity / Distribución Burndown. | Desviación < 15% y < 30% puntos completados en las últimas 48h del sprint. | En observación |
+| **P-ORG-02** | Comunicación Front/Back | Sincronización verbal. | Documentación Swagger/OpenAPI. | Tasa de errores de integración API: (endpoints con error / total endpoints probados) × 100. | < 5%. | Completado |
+| **P-ORG-03** | Scope Creep (Alcance) | Recorte de tareas no críticas. | Derivación de ideas al Backlog y foco MVP. | Número de funcionalidades con tareas activas en el tablero que no figuran en la lista "Must Have" del Product Backlog. | 0 funcionalidades fuera del MVP. | En ejecución |
+| **P-ORG-04** | Disponibilidad equipo | Reasignación de tareas. | Avisos de antelación mínima de 24h y rotación de conocimiento. | Número de tareas críticas bloqueadas. | 0 tareas críticas bloqueadas. | En ejecución |
+
+### 2.2. Problemas de Comunicación Interpersonal y Cohesión de Equipo
+
+| ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
+|:---:|---|---|---|---|---|:---:|
+| **P-COM-01** | Discusiones y desacuerdos de rumbo | Mediación verbal inmediata por los Scrum Masters. | Weekly Retrospective estructurada para canalizar desacuerdos de forma constructiva. | Número de conflictos escalados por sprint. | ≤ 1 conflicto escalado por sprint. | Completado |
+| **P-COM-02** | Tensiones intergrupales entre subequipos | Intervención directa de los SMs para restablecer el diálogo. | Actividades de Team Building y reuniones conjuntas entre subequipos. | Puntuación media de la encuesta interna de convivencia (escala 1–10, media aritmética de todos los miembros). | ≥ 7,0 / 10 en la medición posterior a cada actividad de Team Building. | Completado |
+| **P-COM-03** | Falta de canal común de decisiones | Uso improvisado de mensajería directa. | Canal oficial de comunicación con registro de decisiones tras cada reunión. | Porcentaje de decisiones documentables registradas en el canal oficial: (decisiones registradas / decisiones documentables totales) × 100. | ≥ 90% por semana. | En ejecución |
+
+### 2.3. Problemas de Rendimiento Individual
+
+| ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
+|:---:|---|---|---|---|---|:---:|
+| **P-REN-01** | Ejecución tardía de tareas | Redistribución urgente de carga entre miembros disponibles. | Monitorización semanal de fechas de cierre de tareas en el tablero. | Porcentaje de tareas cerradas después de la fecha acordada en la planificación: (tareas fuera de plazo / total tareas del sprint) × 100. | ≤ 25% por sprint. | En observación |
+| **P-REN-02** | Desequilibrio de carga entre miembros | Reasignación puntual de tareas detectada en la Weekly Review. | Planning Poker para estimación colectiva y revisión de distribución en el Weekend Meeting. | IRR individual por miembro y semana. | IRR de cada miembro en el rango [0,60 – 1,60] cada semana. | En observación |
+| **P-REN-03** | Baja calidad del trabajo entregado | Revisión adicional por pares antes de merge. | Revisión obligatoria con la rúbrica de calidad antes de integrar cualquier entrega. | Puntuación media de calidad según la rúbrica de §3.1 (media de los cuatro criterios). | ≥ 7,0 / 10 por entrega. | En ejecución |
+| **P-REN-04** | Miembros con rendimiento fuera del rango esperado | Conversación directa del SM con el miembro afectado. | Seguimiento individualizado semanal por el SM de referencia. | Número de miembros con IRR < 0,60 o IRR > 1,60 en una misma semana. | ≤ 2 miembros fuera del rango [0,60 – 1,60] en cualquier semana del sprint. | En observación |
 
 ---
 
-## 3. Métricas de Solución y Umbrales
+## 3. Definiciones Previas
 
-Este apartado detalla los indicadores clave de desempeño (KPI) utilizados para monitorizar la efectividad de las mitigaciones aplicadas. Cada riesgo cuenta con una métrica unívoca que permite validar objetivamente el éxito del proyecto.
+Esta sección establece las definiciones acordadas por el equipo que se usan de forma consistente en el resto del documento. Su propósito es eliminar cualquier ambigüedad en la medición de los umbrales presentados en el apartado anterior.
 
-### 3.1. Métricas Técnicas y de Desarrollo
+### 3.1. Rúbrica de Calidad del Trabajo
 
-- **P-TEC-01 (Aprendizaje .NET / C#):** Se mide mediante la Tasa de éxito en Pull Requests (PRs). El umbral es que más del 90% de las PRs sean aprobadas en la primera revisión sin requerir cambios estructurales, entendidos como la reescritura de lógica de negocio, el rediseño de clases o la modificación de contratos de interfaz. Los comentarios cosméticos o de estilo no invalidan la aprobación.
-- **P-TEC-02 (Curva Aprendizaje Expo):** Se mide mediante el número de builds fallidos por causa de errores de sintaxis en cada Sprint. El umbral es que estos builds fallidos no superen el 15% del total de builds ejecutados en el Sprint, calculado como: (builds fallidos por sintaxis / total de builds) × 100. Esta métrica se obtiene directamente de los logs de compilación del pipeline de CI/CD.
-- **P-TEC-03 (Dificultad con Supabase):** Se monitoriza el consumo de recursos de la plataforma frente a los límites del plan gratuito de Supabase, que establece un máximo de 500 MB de base de datos, 1 GB de almacenamiento de archivos y 2 GB de transferencia de datos mensual. El umbral de éxito es no superar ninguno de estos tres límites, verificable directamente en el panel de cuotas de Supabase.
-- **P-TEC-04 (PostGIS y Matching Geográfico):** Se mide por la latencia media del algoritmo de Matching, calculada como el tiempo medio de respuesta de las consultas de búsqueda por proximidad ejecutadas durante las pruebas de carga. El umbral es un tiempo medio de respuesta inferior a 500 ms.
-- **P-TEC-05 (Conocimiento de Requisitos):** Se utiliza la Tasa de retrabajo (Rework), calculada como el porcentaje de tareas completadas en un Sprint que son devueltas a desarrollo por no cumplir los criterios de aceptación definidos, sobre el total de tareas completadas en ese mismo Sprint: (tareas devueltas / tareas completadas) × 100. El umbral es mantener este porcentaje por debajo del 10% en cada Sprint.
-- **P-TEC-06 (Arquitectura Distribuida):** Se mide por el éxito en la integración de los módulos definidos en la arquitectura del sistema (frontend, backend, base de datos y servicios externos). Un módulo se considera integrado cuando supera satisfactoriamente las pruebas de integración automatizadas con el resto del sistema y está desplegado en el entorno correspondiente. El umbral es que el 100% de los módulos definidos alcancen este estado antes de la entrega final.
-- **P-TEC-07 (Foco en el MVP):** Se monitoriza el porcentaje de puntos de historia completados en cada Sprint que corresponden a funcionalidades clasificadas como "Must Have" según la priorización MoSCoW acordada al inicio del proyecto. La clasificación de cada historia de usuario como Core o no-Core queda fijada en el Backlog antes del inicio del Sprint y no puede modificarse durante el mismo. El umbral es que más del 80% de los puntos completados pertenezcan a esta categoría.
-- **P-TEC-08 (Límites Técnicos de Expo):** Se valida comprobando que el 100% de las funcionalidades del MVP que dependen de GPS o mapas responden correctamente en los dispositivos de prueba definidos por el equipo. Una funcionalidad se considera operativa si completa su flujo completo sin errores de permisos, de renderizado o de geolocalización en al menos 3 ejecuciones consecutivas. Este umbral se verifica antes de cada entrega.
-- **P-TEC-09 (Conflictos y falta de revisión en Git):** La métrica es binaria y aplica exclusivamente sobre las ramas protegidas del repositorio (main y develop). Se busca un 0% de commits directos sobre estas ramas y un 100% de Pull Requests aprobadas por al menos un compañero distinto al autor antes de su fusión. Ambas condiciones deben cumplirse simultáneamente; el incumplimiento de cualquiera de ellas invalida el umbral. Esto garantiza que ningún código llegue a producción sin revisión por pares.
+Toda entrega de trabajo (tarea, documento o pull request) se evalúa por el revisor asignado con la siguiente rúbrica de cuatro criterios, cada uno puntuado de 0 a 10. La **puntuación final** es la media aritmética de los cuatro:
 
-### 3.2. Métricas Organizativas y de Gestión
+| Criterio | 0–4 (Insuficiente) | 5–6 (Aceptable) | 7–8 (Bien) | 9–10 (Excelente) |
+|---|---|---|---|---|
+| **Completitud** | Faltan partes esenciales o requisitos sin cubrir. | Cubre lo mínimo pero con lagunas menores. | Cubre todos los requisitos acordados. | Cubre todos los requisitos y anticipa casos límite. |
+| **Corrección** | Errores que impiden el funcionamiento o comprensión. | Errores menores que no bloquean pero requieren corrección. | Funciona correctamente sin errores observables. | Sin errores y con manejo explícito de casos de error. |
+| **Claridad** | Sin documentación o comentarios; imposible de entender sin ayuda. | Documentación mínima; requiere explicación adicional. | Documentación suficiente para que otro miembro lo entienda. | Documentación clara, estructura autoexplicativa. |
+| **Criterios de aceptación** | No cumple los criterios de aceptación definidos en la tarea. | Cumple parcialmente (≥ 50% de los criterios). | Cumple todos los criterios de aceptación definidos. | Cumple todos los criterios y añade evidencia de prueba. |
 
-- **P-ORG-01 (Sobrecarga y Velocity):** Se utilizan dos indicadores complementarios. El primero es la Variación de Velocity, calculada como la diferencia porcentual entre los puntos comprometidos al inicio del Sprint y los puntos completados al cierre; el umbral es una desviación inferior al 15%. El segundo es la Distribución del trabajo, verificada mediante el Burndown Chart: se considera exitoso si menos del 30% de los puntos totales del Sprint se completan en las últimas 48 horas previas a la entrega, lo que evidencia que el Planning Poker ha generado estimaciones realistas y sostenibles.
-- **P-ORG-02 (Comunicación Front vs Back):** Se utiliza la Tasa de errores en la integración de la API, calculada como el porcentaje de endpoints que producen respuestas inesperadas (tipos de datos incorrectos, campos ausentes o códigos de error no contemplados en el contrato Swagger) sobre el total de endpoints probados en cada ciclo de integración: (endpoints con error / total endpoints probados) × 100. El umbral es inferior al 5%.
-- **P-ORG-03 (Control de Alcance):** Se mide mediante el conteo de funcionalidades en desarrollo activo que no figuren en la lista de requisitos "Must Have" del MVP, definida y congelada al inicio del proyecto en el Product Backlog. Una funcionalidad se considera "fuera del MVP" si tiene tareas activas en el tablero y no está incluida en dicha lista de referencia. El umbral de éxito es 0 funcionalidades en ese estado, validando que cualquier idea nueva ha sido derivada correctamente al Backlog como ítem "Post-MVP".
-- **P-ORG-04 (Disponibilidad del equipo):** Se monitoriza el número de tareas bloqueadas por ausencias no previstas. A efectos de esta métrica, una tarea se considera **crítica** si está en el Sprint activo, tiene dependencias directas con otras tareas en curso y su bloqueo impide el avance de al menos otro miembro del equipo. El umbral es de 0 tareas críticas bloqueadas según esta definición.
+Una entrega se considera **aceptada** si su puntuación media es ≥ 7,0. Si es inferior, el revisor devuelve la tarea con los criterios suspendidos indicados y no se integra al sprint hasta su corrección.
 
-### 3.3. Métricas de Infraestructura y Costes
+### 3.2. Definición de Decisión Documentable
 
-- **P-INF-01 (Complejidad Azure Ops):** Se mide por el número de incidencias técnicas tras el despliegue. A efectos de esta métrica, una incidencia se considera **crítica** si provoca una caída total del servicio, pérdida o corrupción de datos, o impide el acceso de los usuarios a las funcionalidades del MVP. El umbral es de 0 incidencias críticas según esta definición tras cada despliegue estable.
-- **P-INF-02 (Interrupciones de servicio):** Se utiliza el Tiempo de actividad del servicio (Uptime) medido por Azure Monitor durante los periodos de evaluación y demostración del proyecto. El umbral es una disponibilidad igual o superior al 99% en dichos periodos, lo que equivale a un máximo de aproximadamente 7 minutos de caída por cada 12 horas de ventana de evaluación. Fuera de estos periodos, se acepta una disponibilidad menor derivada del uso de entornos de bajo coste.
-- **P-INF-03 (Créditos Azure):** Se controla el saldo de créditos disponibles en cada una de las tres cuentas de Azure habilitadas para el despliegue. El umbral de éxito es que ninguna de las cuentas supere un gasto de 100 €, garantizando así la continuidad del servicio hasta el cierre del proyecto sin agotar los créditos disponibles.
+A efectos de la métrica P-COM-03, se entiende por **decisión documentable** cualquier acuerdo tomado en el marco del proyecto que afecte a una o más de las siguientes categorías:
+
+- Cambio en el alcance del sprint o del MVP (añadir, eliminar o posponer funcionalidades).
+- Cambio en la asignación de tareas entre miembros o subequipos.
+- Resolución de un conflicto técnico con impacto en la arquitectura o la API.
+- Resolución de un conflicto interpersonal que haya requerido mediación del SM.
+- Cambio en una fecha de entrega interna acordada en la planificación.
+
+Las conversaciones de trabajo cotidiano (dudas puntuales, aclaraciones de detalle) **no** cuentan como decisiones documentables. El SM de cada subequipo es responsable de identificar y registrar las decisiones de su ámbito en el canal oficial al finalizar cada reunión.
+
+### 3.3. Definición de Conflicto Escalado
+
+A efectos de la métrica P-COM-01, un **conflicto escalado** es aquel en el que se cumplen simultáneamente las dos condiciones siguientes:
+
+1. Los miembros implicados no han podido resolverlo por sí mismos en el plazo de 24 horas.
+2. El SM ha tenido que intervenir activamente (convocar una conversación, tomar una decisión de desempate o mediar formalmente) para restablecer el trabajo normal.
+
+Las discusiones técnicas o de criterio que se resuelven en la misma reunión sin intervención del SM **no** cuentan como conflicto escalado. El SM registra cada conflicto escalado en el mismo documento de intervenciones donde constan las decisiones documentables.
+
+### 3.4. Definición del Índice de Rendimiento Relativo (IRR)
+
+El **IRR** de un miembro en una semana dada se calcula como:
+
+```
+IRR = (Horas dedicadas / Calidad media de sus entregas esa semana)
+      dividido entre
+      (Total de horas del equipo / Calidad media del equipo esa semana)
+```
+
+Un IRR igual a 1 indica que el miembro rinde exactamente igual que la media del equipo. Valores superiores a 1 indican más horas relativas por unidad de calidad (trabajo más lento o de mayor volumen); valores inferiores a 1 indican menos horas relativas por unidad de calidad (trabajo más rápido o de menor volumen). La **calidad media** empleada en el cálculo es la puntuación obtenida con la rúbrica del apartado 3.1, por lo que su medición es objetiva y reproducible.
+
+Los umbrales fijos de alerta por IRR son:
+
+- **IRR < 0,60**: el miembro está aportando significativamente por debajo de la media → el SM inicia seguimiento individualizado.
+- **IRR > 1,60**: el miembro está absorbiendo una carga desproporcionada o trabajando con calidad muy baja → el SM revisa la asignación de tareas.
+
+Estos límites fijos sustituyen al rango dinámico [media ± DT] para garantizar que el umbral sea independiente de la composición del equipo en cada semana.
 
 ---
 
-## 4. Validación y Verificación
+## 4. Métricas de Solución y Umbrales
 
-Para asegurar que las mitigaciones han sido efectivas, se han establecido los siguientes métodos de verificación para cada punto de control.
+Este apartado detalla el procedimiento de cálculo de cada KPI y explica por qué el umbral fijado es suficiente para validar que la mitigación está siendo efectiva.
 
-### 4.1. Verificación de Calidad Técnica y Desarrollo
+### 4.1. Métricas Organizativas y de Gestión
 
-- **Validación de Código (.NET y C#):** Se verifica mediante el Historial de Pull Requests en el repositorio, calculando el porcentaje de PRs aprobadas en la primera revisión sin requerir cambios estructurales sobre el total de PRs abiertas en el Sprint. El umbral se cumple si dicho porcentaje supera el 90%.
-- **Verificación de Aprendizaje (Expo y Sintaxis):** Se valida a través de los Logs de compilación del pipeline de CI/CD, calculando el porcentaje de builds fallidos por errores de sintaxis sobre el total de builds del Sprint. El umbral se cumple si dicho porcentaje es inferior al 15%.
-- **Validación de Supabase:** Se verifica consultando directamente el Panel de cuotas de Supabase, confirmando que el uso se mantiene por debajo de los tres límites definidos: 500 MB de base de datos, 1 GB de almacenamiento de archivos y 2 GB de transferencia de datos mensual.
-- **Prueba de Rendimiento (PostGIS):** Se valida mediante la ejecución de Tests de carga y latencia. La evidencia es un tiempo medio de respuesta inferior a 500 ms en las consultas de búsqueda por proximidad.
-- **Verificación de Requisitos y Foco (P-TEC-05):** Se verifica revisando el tablero de tareas al cierre de cada Sprint y calculando el porcentaje de tareas completadas que fueron devueltas a desarrollo por no cumplir los criterios de aceptación. El umbral se cumple si dicho porcentaje es inferior al 10%.
-- **Verificación de Foco en MVP (P-TEC-07):** Se demuestra mediante el Acta de aceptación del MVP, donde se comprueba que más del 80% de los puntos de historia completados corresponden al núcleo funcional del sistema clasificado como "Must Have".
-- **Verificación de Integración de Módulos (P-TEC-06):** Se verifica comprobando que cada módulo definido en la arquitectura (frontend, backend, base de datos y servicios externos) supera las pruebas de integración automatizadas y está correctamente desplegado en el entorno correspondiente. La evidencia es el informe de resultados del pipeline de integración continua.
-- **Verificación GPS y Mapas (P-TEC-08):** Se valida ejecutando cada funcionalidad del MVP que dependa de GPS o mapas en los dispositivos de prueba definidos por el equipo. El umbral se cumple si el 100% de dichas funcionalidades completan su flujo sin errores de permisos, renderizado o geolocalización en al menos 3 ejecuciones consecutivas antes de cada entrega.
-- **Evidencia de Revisión en Git (P-TEC-09):** Auditoría del historial de Git en el que se verifique que todos los cambios en main y develop provienen de una Pull Request aprobada por un compañero distinto al autor, y que no existe ningún commit directo sobre dichas ramas.
+- **P-ORG-01 (Sobrecarga y Velocity):** Se utilizan dos indicadores complementarios. El primero es la Variación de Velocity, calculada como `|puntos comprometidos − puntos completados| / puntos comprometidos × 100`; el umbral es una desviación inferior al 15%. El segundo es la Distribución del trabajo en el Burndown Chart: se verifica qué porcentaje de los puntos totales del sprint se completaron en las últimas 48 horas antes de la entrega; el umbral es que ese porcentaje sea inferior al 30%. Ambas métricas se leen directamente del tablero de sprint sin necesidad de juicio subjetivo.
 
-### 4.2. Verificación de Gestión y Cohesión
+- **P-ORG-02 (Comunicación Front vs Back):** La Tasa de errores de integración se calcula como `(número de endpoints que producen respuesta inesperada / total de endpoints probados en el ciclo de integración) × 100`. Se entiende por "respuesta inesperada" cualquier tipo de dato incorrecto, campo ausente o código de error no contemplado en el contrato Swagger vigente. El umbral es inferior al 5%. El resultado es reproducible porque el contrato Swagger actúa como referencia objetiva.
 
- 
-- **Control de Planificación (Velocity y Planificación Realista):** Se valida mediante dos comprobaciones. Primera: el Gráfico de Velocidad, verificando que la diferencia entre puntos comprometidos y completados al cierre del Sprint no supera el 15%. Segunda: el Burndown Chart, verificando que menos del 30% de los puntos del Sprint se completen en las últimas 48 horas previas a la entrega. Ambas condiciones deben cumplirse para considerar el indicador satisfecho.
-- **Verificación de la Comunicación (Swagger):** Se demuestra mediante el Contrato Swagger UI operativo y accesible. La validación se realiza comparando las interfaces del Frontend y el Backend en las pruebas de integración; un fallo inferior al 5% confirma que Swagger actúa como fuente de verdad única.
-- **Control de Alcance (Scope Creep):** Se verifica mediante una auditoría del Backlog de Producto. La evidencia de que esta mitigación funciona es que todas las funcionalidades detectadas fuera del núcleo funcional (MVP) están correctamente etiquetadas como "Post-MVP" o "Backlog" y no presentan actividad en el historial de desarrollo, garantizando que el equipo no ha desviado recursos del objetivo principal.
-- **Control de Disponibilidad:** Se verifica mediante el Registro de asistencia y horas del equipo. La ausencia de tareas críticas bloqueadas demuestra que la rotación de conocimiento ha sido efectiva.
+- **P-ORG-03 (Control de Alcance):** Se cuenta el número de funcionalidades que tienen al menos una tarea activa en el tablero y no aparecen en la lista "Must Have" del Product Backlog congelada al inicio del proyecto. El recuento es directo: cualquier miembro puede realizarlo consultando el tablero y el Backlog. El umbral de éxito es 0.
 
-### 4.3. Verificación de Infraestructura y Viabilidad
+- **P-ORG-04 (Disponibilidad del equipo):** Una tarea se considera **crítica** si cumple las tres condiciones siguientes: (1) pertenece al sprint activo, (2) tiene al menos una dependencia directa con otra tarea en curso, y (3) su bloqueo impide que al menos otro miembro avance en su propia tarea. El número de tareas en estado "bloqueada" que cumplen esas tres condiciones se consulta en el tablero. El umbral es 0.
 
-- **Validación de Estabilidad Cloud (Azure):** Se verifica mediante los Informes de disponibilidad (Uptime) de Azure. Un registro del 99% o superior garantiza la operatividad de la infraestructura cloud.
-- **Control de Incidencias:** Se valida mediante el Log de errores en producción, donde el objetivo es mantener un registro de cero incidencias críticas tras los despliegues estables.
-- **Verificación Económica (Créditos):** Se demuestra mediante capturas del Dashboard de Facturación de Azure de cada una de las tres cuentas. El umbral se cumple si ninguna de las cuentas registra un gasto acumulado superior a 300 €, garantizando la continuidad del servicio hasta el cierre del proyecto.
+### 4.2. Métricas de Comunicación Interpersonal y Cohesión de Equipo
+
+- **P-COM-01 (Conflictos escalados):** Se cuenta el número de entradas en el registro de intervenciones del SM durante el sprint, aplicando la definición de §3.3. La fuente de datos es el propio registro, que el SM actualiza tras cada intervención con fecha, miembros implicados y resolución alcanzada. El umbral de ≤ 1 conflicto escalado por sprint refleja que la Weekly Retrospective está funcionando como espacio de resolución preventiva.
+
+- **P-COM-02 (Convivencia y cohesión):** La puntuación de convivencia es la media aritmética de las valoraciones individuales recogidas en la encuesta interna (escala 1–10). La encuesta se pasa antes y después de cada actividad de Team Building, lo que permite medir el impacto de forma objetiva. Los datos del equipo muestran una mejora de 4,65 a 7,65, superando el umbral de ≥ 7,0. La encuesta se repetirá al inicio de cada sprint para detectar posibles regresiones.
+
+- **P-COM-03 (Decisiones documentadas):** Al cierre de cada reunión (Weekly Review y Weekend Meeting), el SM de cada subequipo contrasta las decisiones tomadas con la definición de §3.2 y registra en el canal oficial las que correspondan. Al final de la semana se calcula `(decisiones registradas en el canal / decisiones documentables identificadas por el SM) × 100`. El denominador lo determina el SM en el momento de la reunión, anotando en el acta cuántas decisiones documentables se tomaron, lo que hace el cálculo trazable y verificable por cualquier miembro del equipo.
+
+### 4.3. Métricas de Rendimiento Individual
+
+- **P-REN-01 (Ejecución tardía):** Al cierre de cada sprint se extrae del tablero el listado de tareas con su fecha de cierre real y su fecha acordada en la planificación. El porcentaje se calcula automáticamente como `(tareas cerradas después de su fecha acordada / total de tareas del sprint) × 100`. El umbral de ≤ 25% está alineado con el valor actual registrado (22,3%), lo que indica que el sistema de seguimiento es efectivo aunque con margen de mejora.
+
+- **P-REN-02 (Desequilibrio de carga — IRR individual):** El IRR de cada miembro se calcula semanalmente con la fórmula de §3.4, usando las horas registradas en el sistema de seguimiento del equipo y la puntuación media de calidad obtenida con la rúbrica de §3.1. El umbral fijo de [0,60 – 1,60] se aplica de forma directa: si el IRR de un miembro cae fuera de ese rango, el SM inicia el protocolo de seguimiento antes del siguiente Weekend Meeting. Al usar límites fijos en lugar de la desviación típica dinámica, el umbral es el mismo independientemente de la semana o de cuántos miembros haya activos.
+
+- **P-REN-03 (Calidad del trabajo entregado):** Cada entrega se puntúa con la rúbrica de §3.1. La puntuación final es la media de los cuatro criterios (completitud, corrección, claridad y criterios de aceptación), cada uno valorado de 0 a 10. El revisor registra la puntuación de cada criterio individualmente en el sistema de revisiones, lo que hace el resultado auditable. El umbral de ≥ 7,0 significa que la entrega debe obtener al menos un "Bien" en todos los criterios o compensar algún criterio más bajo con excelencia en otro.
+
+- **P-REN-04 (Miembros fuera del rango de rendimiento):** Se cuenta semanalmente el número de miembros con IRR < 0,60 o IRR > 1,60, usando los mismos valores calculados para P-REN-02. El umbral de ≤ 2 miembros fuera del rango en cualquier semana del sprint actúa como señal de alerta estructural: si se supera, el SM evalúa si la causa es puntual (ausencia, pico de dificultad técnica) o sistemática (mala distribución de tareas en el Planning), y actúa en consecuencia.
+
+---
+
+## 5. Validación y Verificación
+
+Para asegurar que las mitigaciones han sido efectivas, se han establecido los siguientes métodos de verificación para cada punto de control. En todos los casos se indica la fuente de datos y quién es responsable de la comprobación.
+
+### 5.1. Verificación de Gestión y Cohesión
+
+- **Control de Planificación (P-ORG-01):** Responsable: SM del subequipo. Fuente: tablero de sprint. Se verifica al cierre de cada sprint comprobando (1) que la variación de Velocity no supera el 15% y (2) que el Burndown Chart no muestra más del 30% de puntos completados en las últimas 48 horas. Ambas condiciones deben cumplirse simultáneamente.
+
+- **Verificación de Integración (P-ORG-02):** Responsable: equipo de QA. Fuente: resultados del ciclo de pruebas de integración. Se verifica tras cada ciclo de integración comprobando que la tasa de errores de la API no supera el 5% respecto al contrato Swagger vigente.
+
+- **Control de Alcance (P-ORG-03):** Responsable: SM del subequipo. Fuente: tablero de tareas y Product Backlog. Se verifica semanalmente mediante una auditoría cruzada entre las tareas activas del tablero y la lista "Must Have" congelada. Cualquier tarea sin correspondencia en dicha lista se marca como "fuera del MVP" y se traslada al Backlog o se elimina.
+
+- **Control de Disponibilidad (P-ORG-04):** Responsable: SM del subequipo. Fuente: tablero de tareas. Se verifica en tiempo real: cuando una tarea pasa a estado "bloqueada", el SM aplica los tres criterios de criticidad definidos en §4.1 para determinar si debe activarse el protocolo de reasignación.
+
+### 5.2. Verificación de Comunicación y Convivencia
+
+- **Control de Conflictos (P-COM-01):** Responsable: SM de cada subequipo. Fuente: registro de intervenciones del SM. Al cierre de cada sprint se consulta el número de entradas del registro. Si supera 1, el SM y los SMs de los otros subequipos revisan conjuntamente las causas en la Weekly Retrospective siguiente para reforzar el proceso de resolución preventiva.
+
+- **Verificación de Cohesión (P-COM-02):** Responsable: SM global del equipo. Fuente: resultados de la encuesta interna de convivencia. Se valida comparando la puntuación media posterior a cada actividad de Team Building con el umbral de 7,0. Adicionalmente, los comentarios cualitativos del campo de texto libre se revisan para detectar señales de malestar no capturadas por la puntuación numérica.
+
+- **Control del Canal de Decisiones (P-COM-03):** Responsable: SM de cada subequipo. Fuente: canal oficial de comunicación y actas de reunión. Al cierre de cada semana el SM calcula el porcentaje de decisiones documentables registradas. Si el resultado es inferior al 90%, actualiza el registro retroactivamente con los acuerdos pendientes y emite un recordatorio al equipo para la semana siguiente.
+
+### 5.3. Verificación de Rendimiento Individual
+
+- **Control de Ejecución Tardía (P-REN-01):** Responsable: SM del subequipo. Fuente: historial de cambios de estado del tablero. Se calcula automáticamente al cierre del sprint. Si supera el 25%, se convoca una retrospectiva específica para identificar las causas raíz (mala estimación, bloqueos técnicos, sobrecarga) y ajustar la planificación del sprint siguiente.
+
+- **Control del Equilibrio de Carga (P-REN-02):** Responsable: SM del subequipo. Fuente: cuadro de rendimiento individual actualizado semanalmente. El SM calcula el IRR de cada miembro con la fórmula de §3.4 y lo compara con el rango [0,60 – 1,60]. Si algún miembro sale del rango, el SM inicia el seguimiento individualizado antes del siguiente Weekend Meeting.
+
+- **Verificación de Calidad (P-REN-03):** Responsable: revisor asignado a cada tarea. Fuente: historial de revisiones con puntuación desglosada por criterio. El revisor registra la puntuación de cada uno de los cuatro criterios de la rúbrica de §3.1. Si la media es inferior a 7,0, la entrega se devuelve indicando los criterios suspendidos. Si un miembro acumula dos entregas consecutivas por debajo de 7,0, el SM acuerda con él un plan de mejora.
+
+- **Control de Miembros Fuera de Rango (P-REN-04):** Responsable: SM del subequipo. Fuente: mismos valores de IRR calculados para P-REN-02. Se verifica semanalmente. Si más de 2 miembros presentan IRR fuera del rango [0,60 – 1,60], el SM determina si se trata de una anomalía puntual o de una desviación estructural que requiera replanificar la distribución de tareas del sprint en curso.
