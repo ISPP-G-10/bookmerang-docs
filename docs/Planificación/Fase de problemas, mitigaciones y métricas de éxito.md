@@ -96,16 +96,18 @@
 |:-------:|:----------:|---------------|------------------------|
 | v1.0    | 01/04/2026 | Peter Carter  | Primera versión. |
 | v1.1    | 04/04/2026 | Peter Carter  | Adición de riesgos y asociación de riesgos con las métricas. |
+| v1.2    | 05/04/2026 | Peter Carter  | Reformulación de P-TEC-09 con métricas binarias de control de ramas y revisión por pares. Renombrado P-ORG-03 a Scope Creep con métrica y validación específica mediante auditoría de Backlog. Añadida evidencia de integración Git en sección 4.1. |
 | v1.3    | 07/04/2026 | Peter Carter  | Clarificación de los umbrales de los problemas organizativos. |
 | v1.4    | 12/04/2026 | Peter Carter  | Ampliación con problemas de comunicación interpersonal y rendimiento individual. |
 | v1.5    | 12/04/2026 | Peter Carter  | Incorporación de definiciones previas para garantizar que todos los umbrales sean objetivamente cuantificables. |
 | v1.6    | 13/04/2026 | Javier Ulecia García  | Incorporación nuevos problemas, metricas y validaciones. |
+| v2.0    | 13/04/2026 | Peter Carter, Javier Ulecia García | Unificación del criterio IRR a rango fijo [0,60–1,60]; restauradas referencias en el cuadro de mando; actualización de métricas y validaciones. |
 
 ---
 
 ## 2. Cuadro de Mando Unificado: Problemas, Soluciones y Métricas
 
-Este panel integra la evolución desde las medidas de urgencia hacia las soluciones estructurales, vinculando cada riesgo con su indicador de éxito. Los términos marcados con (→ §3) quedan definidos con precisión en el apartado siguiente.
+Este panel integra la evolución desde las medidas de urgencia hacia las soluciones estructurales, vinculando cada riesgo con su indicador de éxito. Los términos marcados con (x.y) quedan definidos con precisión en el apartado siguiente.
 
 ### 2.1. Problemas Organizativos y de Gestión
 
@@ -114,24 +116,24 @@ Este panel integra la evolución desde las medidas de urgencia hacia las solucio
 | **P-ORG-01** | Sobrecarga / Sprint | Esfuerzo agónico. | Planning Poker y Burndown Chart. | Variación de Velocity / Distribución Burndown. | Desviación < 15% y < 30% puntos completados en las últimas 48h del sprint. | En observación |
 | **P-ORG-02** | Comunicación Front/Back | Sincronización verbal. | Documentación Swagger/OpenAPI. | Tasa de errores de integración API: (endpoints con error / total endpoints probados) × 100. | < 5%. | Completado |
 | **P-ORG-03** | Scope Creep (Alcance) | Recorte de tareas no críticas. | Derivación de ideas al Backlog y foco MVP. | Número de funcionalidades con tareas activas en el tablero que no figuran en la lista "Must Have" del Product Backlog. | 0 funcionalidades fuera del MVP. | En ejecución |
-| **P-ORG-04** | Disponibilidad equipo | Reasignación de tareas. | Avisos de antelación mínima de 24h y rotación de conocimiento. | Número de tareas críticas bloqueadas. | 0 tareas críticas bloqueadas. | En ejecución |
+| **P-ORG-04** | Disponibilidad equipo | Reasignación de tareas. | Avisos de antelación mínima de 24h y rotación de conocimiento. | Número de tareas críticas bloqueadas (4.1). | 0 tareas críticas bloqueadas. | En ejecución |
 
 ### 2.2. Problemas de Comunicación Interpersonal y Cohesión de Equipo
 
 | ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
 |:---:|---|---|---|---|---|:---:|
-| **P-COM-01** | Discusiones y desacuerdos de rumbo | Mediación verbal inmediata por los Scrum Masters. | Weekly Retrospective estructurada para canalizar desacuerdos de forma constructiva. | Número de conflictos escalados por sprint. | ≤ 1 conflicto escalado por sprint. | Completado |
+| **P-COM-01** | Discusiones y desacuerdos de rumbo | Mediación verbal inmediata por los Scrum Masters. | Weekly Retrospective estructurada para canalizar desacuerdos de forma constructiva. | Número de conflictos escalados por sprint (3.3). | ≤ 1 conflicto escalado por sprint. | Completado |
 | **P-COM-02** | Tensiones intergrupales entre subequipos | Intervención directa de los SMs para restablecer el diálogo. | Actividades de Team Building y reuniones conjuntas entre subequipos. | Puntuación media de la encuesta interna de convivencia (escala 1–10, media aritmética de todos los miembros). | ≥ 7,0 / 10 en la medición posterior a cada actividad de Team Building. | Completado |
-| **P-COM-03** | Falta de canal común de decisiones | Uso improvisado de mensajería directa. | Canal oficial de comunicación con registro de decisiones tras cada reunión. | Porcentaje de decisiones documentables registradas en el canal oficial: (decisiones registradas / decisiones documentables totales) × 100. | ≥ 90% por semana. | En ejecución |
+| **P-COM-03** | Falta de canal común de decisiones | Uso improvisado de mensajería directa. | Canal oficial de comunicación con registro de decisiones tras cada reunión. | Porcentaje de decisiones documentables registradas en el canal oficial (3.2): (decisiones registradas / decisiones documentables totales) × 100. | ≥ 90% por semana. | En ejecución |
 
 ### 2.3. Problemas de Rendimiento Individual
 
 | ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
 |:---:|---|---|---|---|---|:---:|
 | **P-REN-01** | Ejecución tardía de tareas | Redistribución urgente de carga entre miembros disponibles. | Monitorización semanal de fechas de cierre de tareas en el tablero. | Porcentaje de tareas cerradas después de la fecha acordada en la planificación: (tareas fuera de plazo / total tareas del sprint) × 100. | ≤ 25% por sprint. | En observación |
-| **P-REN-02** | Desequilibrio de carga entre miembros | Reasignación puntual de tareas detectada en la Weekly Review. | Planning Poker para estimación colectiva y revisión de distribución en el Weekend Meeting. | IRR individual por miembro y semana. | IRR de cada miembro en el rango [0,60 – 1,60] cada semana. | En observación |
-| **P-REN-03** | Baja calidad del trabajo entregado | Revisión adicional por pares antes de merge. | Revisión obligatoria con la rúbrica de calidad antes de integrar cualquier entrega. | Puntuación media de calidad según la rúbrica de §3.1 (media de los cuatro criterios). | ≥ 7,0 / 10 por entrega. | En ejecución |
-| **P-REN-04** | Miembros con rendimiento fuera del rango esperado | Conversación directa del SM con el miembro afectado. | Seguimiento individualizado semanal por el SM de referencia. | Número de miembros con IRR < 0,60 o IRR > 1,60 en una misma semana. | ≤ 2 miembros fuera del rango [0,60 – 1,60] en cualquier semana del sprint. | En observación |
+| **P-REN-02** | Desequilibrio de carga entre miembros | Reasignación puntual de tareas detectada en la Weekly Review. | Planning Poker para estimación colectiva y revisión de distribución en el Weekend Meeting. | IRR individual por miembro y semana (3.4). | IRR de cada miembro en el rango [0,60 – 1,60] cada semana. | En observación |
+| **P-REN-03** | Baja calidad del trabajo entregado | Revisión adicional por pares antes de merge. | Revisión obligatoria con la rúbrica de calidad (3.1) antes de integrar cualquier entrega. | Puntuación media de calidad según la rúbrica del punto 3.1 (media de los cuatro criterios). | ≥ 7,0 / 10 por entrega. | En ejecución |
+| **P-REN-04** | Miembros con rendimiento fuera del rango esperado | Conversación directa del SM con el miembro afectado. | Seguimiento individualizado semanal por el SM de referencia. | Número de miembros con IRR < 0,60 o IRR > 1,60 en una misma semana (3.4). | ≤ 2 miembros fuera del rango [0,60 – 1,60] en cualquier semana del sprint. | En observación |
 
 ### 2.4. Problemas Técnicos y de Calidad del Proyecto
 
@@ -199,7 +201,7 @@ Los umbrales fijos de alerta por IRR son:
 - **IRR < 0,60**: el miembro está aportando significativamente por debajo de la media → el SM inicia seguimiento individualizado.
 - **IRR > 1,60**: el miembro está absorbiendo una carga desproporcionada o trabajando con calidad muy baja → el SM revisa la asignación de tareas.
 
-Estos límites fijos sustituyen al rango dinámico [media ± DT] para garantizar que el umbral sea independiente de la composición del equipo en cada semana.
+Estos límites fijos sustituyen al rango dinámico (media ± DT) usado en versiones previas, garantizando que el umbral sea independiente de la composición del equipo en cada semana.
 
 ---
 
@@ -219,19 +221,19 @@ Este apartado detalla el procedimiento de cálculo de cada KPI y explica por qu�
 
 ### 4.2. Métricas de Comunicación Interpersonal y Cohesión de Equipo
 
-- **P-COM-01 (Conflictos escalados):** Se cuenta el número de entradas en el registro de intervenciones del SM durante el sprint, aplicando la definición de §3.3. La fuente de datos es el propio registro, que el SM actualiza tras cada intervención con fecha, miembros implicados y resolución alcanzada. El umbral de ≤ 1 conflicto escalado por sprint refleja que la Weekly Retrospective está funcionando como espacio de resolución preventiva.
+- **P-COM-01 (Conflictos escalados):** Se cuenta el número de entradas en el registro de intervenciones del SM durante el sprint, aplicando la definición del punto 3.3. La fuente de datos es el propio registro, que el SM actualiza tras cada intervención con fecha, miembros implicados y resolución alcanzada. El umbral de ≤ 1 conflicto escalado por sprint refleja que la Weekly Retrospective está funcionando como espacio de resolución preventiva.
 
 - **P-COM-02 (Convivencia y cohesión):** La puntuación de convivencia es la media aritmética de las valoraciones individuales recogidas en la encuesta interna (escala 1–10). La encuesta se pasa antes y después de cada actividad de Team Building, lo que permite medir el impacto de forma objetiva. Los datos del equipo muestran una mejora de 4,65 a 7,65, superando el umbral de ≥ 7,0. La encuesta se repetirá al inicio de cada sprint para detectar posibles regresiones.
 
-- **P-COM-03 (Decisiones documentadas):** Al cierre de cada reunión (Weekly Review y Weekend Meeting), el SM de cada subequipo contrasta las decisiones tomadas con la definición de §3.2 y registra en el canal oficial las que correspondan. Al final de la semana se calcula `(decisiones registradas en el canal / decisiones documentables identificadas por el SM) × 100`. El denominador lo determina el SM en el momento de la reunión, anotando en el acta cuántas decisiones documentables se tomaron, lo que hace el cálculo trazable y verificable por cualquier miembro del equipo.
+- **P-COM-03 (Decisiones documentadas):** Al cierre de cada reunión (Weekly Review y Weekend Meeting), el SM de cada subequipo contrasta las decisiones tomadas con la definición del punto 3.2 y registra en el canal oficial las que correspondan. Al final de la semana se calcula `(decisiones registradas en el canal / decisiones documentables identificadas por el SM) × 100`. El denominador lo determina el SM en el momento de la reunión, anotando en el acta cuántas decisiones documentables se tomaron, lo que hace el cálculo trazable y verificable por cualquier miembro del equipo.
 
 ### 4.3. Métricas de Rendimiento Individual
 
 - **P-REN-01 (Ejecución tardía):** Al cierre de cada sprint se extrae del tablero el listado de tareas con su fecha de cierre real y su fecha acordada en la planificación. El porcentaje se calcula automáticamente como `(tareas cerradas después de su fecha acordada / total de tareas del sprint) × 100`. El umbral de ≤ 25% está alineado con el valor actual registrado (22,3%), lo que indica que el sistema de seguimiento es efectivo aunque con margen de mejora.
 
-- **P-REN-02 (Desequilibrio de carga — IRR individual):** El IRR de cada miembro se calcula semanalmente con la fórmula de §3.4, usando las horas registradas en el sistema de seguimiento del equipo y la puntuación media de calidad obtenida con la rúbrica de §3.1. El umbral fijo de [0,60 – 1,60] se aplica de forma directa: si el IRR de un miembro cae fuera de ese rango, el SM inicia el protocolo de seguimiento antes del siguiente Weekend Meeting. Al usar límites fijos en lugar de la desviación típica dinámica, el umbral es el mismo independientemente de la semana o de cuántos miembros haya activos.
+- **P-REN-02 (Desequilibrio de carga — IRR individual):** El IRR de cada miembro se calcula semanalmente con la fórmula del punto 3.4, usando las horas registradas en el sistema de seguimiento del equipo y la puntuación media de calidad obtenida con la rúbrica del punto 3.1. El umbral fijo de [0,60 – 1,60] se aplica de forma directa: si el IRR de un miembro cae fuera de ese rango, el SM inicia el protocolo de seguimiento antes del siguiente Weekend Meeting. Al usar límites fijos en lugar de la desviación típica dinámica, el umbral es el mismo independientemente de la semana o de cuántos miembros haya activos.
 
-- **P-REN-03 (Calidad del trabajo entregado):** Cada entrega se puntúa con la rúbrica de §3.1. La puntuación final es la media de los cuatro criterios (completitud, corrección, claridad y criterios de aceptación), cada uno valorado de 0 a 10. El revisor registra la puntuación de cada criterio individualmente en el sistema de revisiones, lo que hace el resultado auditable. El umbral de ≥ 7,0 significa que la entrega debe obtener al menos un "Bien" en todos los criterios o compensar algún criterio más bajo con excelencia en otro.
+- **P-REN-03 (Calidad del trabajo entregado):** Cada entrega se puntúa con la rúbrica del punto 3.1. La puntuación final es la media de los cuatro criterios (completitud, corrección, claridad y criterios de aceptación), cada uno valorado de 0 a 10. El revisor registra la puntuación de cada criterio individualmente en el sistema de revisiones, lo que hace el resultado auditable. El umbral de ≥ 7,0 significa que la entrega debe obtener al menos un "Bien" en todos los criterios o compensar algún criterio más bajo con excelencia en otro.
 
 - **P-REN-04 (Miembros fuera del rango de rendimiento):** Se cuenta semanalmente el número de miembros con IRR < 0,60 o IRR > 1,60, usando los mismos valores calculados para P-REN-02. El umbral de ≤ 2 miembros fuera del rango en cualquier semana del sprint actúa como señal de alerta estructural: si se supera, el SM evalúa si la causa es puntual (ausencia, pico de dificultad técnica) o sistemática (mala distribución de tareas en el Planning), y actúa en consecuencia.
 
@@ -264,7 +266,7 @@ Se considera que una historia está cubierta si:
   - la prueba ha sido ejecutada con resultado satisfactorio
   - el resultado ha quedado registrado
 
-  La fuente de datos es el tablero del sprint y el backlog técnico. El umbral de éxito es ≥ 80% por sprint, ya que un valor inferior indicaría acumulación de deuda técnica que podría comprometer la mantenibilidad futura del proyecto.
+  La fuente de datos es el tablero del sprint y el backlog técnico. El umbral de éxito es ≥ 85% por sprint, ya que un valor inferior indicaría acumulación de deuda técnica que podría comprometer la mantenibilidad futura del proyecto.
 
 ---
 
@@ -280,7 +282,7 @@ Para asegurar que las mitigaciones han sido efectivas, se han establecido los si
 
 - **Control de Alcance (P-ORG-03):** Responsable: SM del subequipo. Fuente: tablero de tareas y Product Backlog. Se verifica semanalmente mediante una auditoría cruzada entre las tareas activas del tablero y la lista "Must Have" congelada. Cualquier tarea sin correspondencia en dicha lista se marca como "fuera del MVP" y se traslada al Backlog o se elimina.
 
-- **Control de Disponibilidad (P-ORG-04):** Responsable: SM del subequipo. Fuente: tablero de tareas. Se verifica en tiempo real: cuando una tarea pasa a estado "bloqueada", el SM aplica los tres criterios de criticidad definidos en §4.1 para determinar si debe activarse el protocolo de reasignación.
+- **Control de Disponibilidad (P-ORG-04):** Responsable: SM del subequipo. Fuente: tablero de tareas. Se verifica en tiempo real: cuando una tarea pasa a estado "bloqueada", el SM aplica los tres criterios de criticidad definidos en el punto 4.1 para determinar si debe activarse el protocolo de reasignación.
 
 ### 5.2. Verificación de Comunicación y Convivencia
 
@@ -294,9 +296,9 @@ Para asegurar que las mitigaciones han sido efectivas, se han establecido los si
 
 - **Control de Ejecución Tardía (P-REN-01):** Responsable: SM del subequipo. Fuente: historial de cambios de estado del tablero. Se calcula automáticamente al cierre del sprint. Si supera el 25%, se convoca una retrospectiva específica para identificar las causas raíz (mala estimación, bloqueos técnicos, sobrecarga) y ajustar la planificación del sprint siguiente.
 
-- **Control del Equilibrio de Carga (P-REN-02):** Responsable: SM del subequipo. Fuente: cuadro de rendimiento individual actualizado semanalmente. El SM calcula el IRR de cada miembro con la fórmula de §3.4 y lo compara con el rango [0,60 – 1,60]. Si algún miembro sale del rango, el SM inicia el seguimiento individualizado antes del siguiente Weekend Meeting.
+- **Control del Equilibrio de Carga (P-REN-02):** Responsable: SM del subequipo. Fuente: cuadro de rendimiento individual actualizado semanalmente. El SM calcula el IRR de cada miembro con la fórmula del punto 3.4 y lo compara con el rango [0,60 – 1,60]. Si algún miembro sale del rango, el SM inicia el seguimiento individualizado antes del siguiente Weekend Meeting.
 
-- **Verificación de Calidad (P-REN-03):** Responsable: revisor asignado a cada tarea. Fuente: historial de revisiones con puntuación desglosada por criterio. El revisor registra la puntuación de cada uno de los cuatro criterios de la rúbrica de §3.1. Si la media es inferior a 7,0, la entrega se devuelve indicando los criterios suspendidos. Si un miembro acumula dos entregas consecutivas por debajo de 7,0, el SM acuerda con él un plan de mejora.
+- **Verificación de Calidad (P-REN-03):** Responsable: revisor asignado a cada tarea. Fuente: historial de revisiones con puntuación desglosada por criterio. El revisor registra la puntuación de cada uno de los cuatro criterios de la rúbrica del punto 3.1. Si la media es inferior a 7,0, la entrega se devuelve indicando los criterios suspendidos. Si un miembro acumula dos entregas consecutivas por debajo de 7,0, el SM acuerda con él un plan de mejora.
 
 - **Control de Miembros Fuera de Rango (P-REN-04):** Responsable: SM del subequipo. Fuente: mismos valores de IRR calculados para P-REN-02. Se verifica semanalmente. Si más de 2 miembros presentan IRR fuera del rango [0,60 – 1,60], el SM determina si se trata de una anomalía puntual o de una desviación estructural que requiera replanificar la distribución de tareas del sprint en curso.
 
