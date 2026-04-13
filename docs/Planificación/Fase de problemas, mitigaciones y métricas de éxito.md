@@ -71,6 +71,7 @@
   - [2.1. Problemas Organizativos y de Gestión](#21-problemas-organizativos-y-de-gestión)
   - [2.2. Problemas de Comunicación Interpersonal y Cohesión de Equipo](#22-problemas-de-comunicación-interpersonal-y-cohesión-de-equipo)
   - [2.3. Problemas de Rendimiento Individual](#23-problemas-de-rendimiento-individual)
+  - [2.4. Problemas Técnicos y de Calidad del Proyecto](#24-problemas-técnicos-y-de-calidad-del-proyecto)
 - [3. Definiciones Previas](#3-definiciones-previas)
   - [3.1. Rúbrica de Calidad del Trabajo](#31-rúbrica-de-calidad-del-trabajo)
   - [3.2. Definición de Decisión Documentable](#32-definición-de-decisión-documentable)
@@ -80,10 +81,12 @@
   - [4.1. Métricas Organizativas y de Gestión](#41-métricas-organizativas-y-de-gestión)
   - [4.2. Métricas de Comunicación Interpersonal y Cohesión de Equipo](#42-métricas-de-comunicación-interpersonal-y-cohesión-de-equipo)
   - [4.3. Métricas de Rendimiento Individual](#43-métricas-de-rendimiento-individual)
+  - [4.4. Métricas Técnicas y de Calidad del Proyecto](#44-métricas-técnicas-y-de-calidad-del-proyecto)
 - [5. Validación y Verificación](#5-validación-y-verificación)
   - [5.1. Verificación de Gestión y Cohesión](#51-verificación-de-gestión-y-cohesión)
   - [5.2. Verificación de Comunicación y Convivencia](#52-verificación-de-comunicación-y-convivencia)
   - [5.3. Verificación de Rendimiento Individual](#53-verificación-de-rendimiento-individual)
+  - [5.4. Verificación de Riesgos Técnicos y de Calidad](#54-verificación-de-riesgos-técnicos-y-de-calidad)
 
 ---
 
@@ -96,6 +99,7 @@
 | v1.3    | 07/04/2026 | Peter Carter  | Clarificación de los umbrales de los problemas organizativos. |
 | v1.4    | 12/04/2026 | Peter Carter  | Ampliación con problemas de comunicación interpersonal y rendimiento individual. |
 | v1.5    | 12/04/2026 | Peter Carter  | Incorporación de definiciones previas para garantizar que todos los umbrales sean objetivamente cuantificables. |
+| v1.6    | 13/04/2026 | Javier Ulecia García  | Incorporación nuevos problemas, metricas y validaciones. |
 
 ---
 
@@ -128,6 +132,15 @@ Este panel integra la evolución desde las medidas de urgencia hacia las solucio
 | **P-REN-02** | Desequilibrio de carga entre miembros | Reasignación puntual de tareas detectada en la Weekly Review. | Planning Poker para estimación colectiva y revisión de distribución en el Weekend Meeting. | IRR individual por miembro y semana. | IRR de cada miembro en el rango [0,60 – 1,60] cada semana. | En observación |
 | **P-REN-03** | Baja calidad del trabajo entregado | Revisión adicional por pares antes de merge. | Revisión obligatoria con la rúbrica de calidad antes de integrar cualquier entrega. | Puntuación media de calidad según la rúbrica de §3.1 (media de los cuatro criterios). | ≥ 7,0 / 10 por entrega. | En ejecución |
 | **P-REN-04** | Miembros con rendimiento fuera del rango esperado | Conversación directa del SM con el miembro afectado. | Seguimiento individualizado semanal por el SM de referencia. | Número de miembros con IRR < 0,60 o IRR > 1,60 en una misma semana. | ≤ 2 miembros fuera del rango [0,60 – 1,60] en cualquier semana del sprint. | En observación |
+
+### 2.4. Problemas Técnicos y de Calidad del Proyecto
+
+| ID | Riesgo | Medida de Urgencia (Parche Rápido) | Solución Estructural (Mitigación) | Métrica / KPI | Umbral de Éxito | Estado |
+|:---:|---|---|---|---|---|:---:|
+| **P-TEC-01** | Acumulación de deuda técnica | Corregir bugs críticos antes de nuevas tareas. | Reserva fija de capacidad del sprint para refactorización y mejora técnica. | Porcentaje de tareas técnicas completadas respecto a las planificadas (tareas técnicas completadas / tareas técnicas planificadas) × 100. | ≥ 80% por sprint. | En ejecución |
+| **P-TEC-02** | Bloqueos por dependencias entre tareas o módulos  | Repriorización inmediata de tareas bloqueadas y reasignación temporal de apoyo. | Definición explícita de dependencias en el tablero y revisión anticipada en la planificación semanal. | Porcentaje de tareas bloqueadas por dependencias no detectadas en planificación: (tareas bloqueadas por dependencia imprevista / total tareas del sprint) × 100. | ≤ 10% por sprint. | En observación |
+| **P-TEC-03** | Retrasos por errores en despliegue / entorno | Hotfix inmediato y rollback si es necesario. | Checklist de despliegue + entorno de preproducción estable. | Número de incidencias de despliegue por sprint. | ≤ 1 incidencia por sprint. | En ejecución |
+| **P-TEC-04** | Baja cobertura de pruebas / errores en producción. | Test manual sobre los módulos afectados. | Política mínima de test automáticos en funcionalidades clave. | Porcentaje de historias críticas cubiertas por test: (historias críticas con test / total historias críticas) × 100. | ≥ 85%. | En ejecución |
 
 ---
 
@@ -222,6 +235,37 @@ Este apartado detalla el procedimiento de cálculo de cada KPI y explica por qu�
 
 - **P-REN-04 (Miembros fuera del rango de rendimiento):** Se cuenta semanalmente el número de miembros con IRR < 0,60 o IRR > 1,60, usando los mismos valores calculados para P-REN-02. El umbral de ≤ 2 miembros fuera del rango en cualquier semana del sprint actúa como señal de alerta estructural: si se supera, el SM evalúa si la causa es puntual (ausencia, pico de dificultad técnica) o sistemática (mala distribución de tareas en el Planning), y actúa en consecuencia.
 
+### 4.4. Métricas Técnicas y de Calidad del Proyecto
+
+- **P-TEC-01 (Acumulación de deuda técnica):** Al inicio de cada sprint, los SM registran en el Product Backlog las tareas técnicas necesarias para mantener la calidad del proyecto (refactorización, limpieza de código, optimización de consultas, mejora de estructura o documentación técnica). Al cierre del sprint se calcula el porcentaje de tareas técnicas completadas respecto a las planificadas `(tareas técnicas completadas / total tareas técnicas planificadas) × 100`. La fuente de los datos es el tablero del sprint y el backlog técnico. El umbral de éxito es ≥ 80% por sprint, ya que un valor inferior indicaría acumulación de deuda técnica que podría comprometer la mantenibilidad futura del proyecto.
+
+- **P-TEC-02 (Bloqueos por dependencias imprevistas):** Se calcula semanalmente el porcentaje de tareas del sprint que han quedado bloqueadas durante más de 24 horas por depender de otra tarea, módulo o entrega que no fue identificada como dependencia durante la planificación inicial, siendo la fórmula `(tareas bloqueadas por dependencia imprevista / total tareas del sprint) × 100`. Se considera dependencia imprevista aquella situación en la que:
+  - La tarea estaba en la columna de "In progress" al inicio del sprint.
+  - El miembro asignado no puede continuar por más de 24 horas.
+  - La causa del bloqueo es falta de finalización de otra tarea o módulo necesario.
+
+  El umbral de éxito es ≤ 10% de tareas bloqueadas por sprint, ya que un valor superior indicaría una mala detección de dependencias en la planificación.
+
+- **P-TEC-03 (Retrasos por errores en despliegue o entorno):** Se registra cada incidencia ocurrida durante despliegues, pruebas en entorno o integración continua que impida validar o entregar una funcionalidad en el tiempo previsto.
+Se consideran incidencias de despliegue: 
+  - errores en configuración
+  - fallos en la build
+  - errores de migración en la base de datos
+  - incompatibilidades entre entornos
+  - necesidad de rollback
+
+  La métrica es el número total de incidencias por sprint, siendo el umbral de éxito ≤ 1 incidencia por sprint, ya que un valor superior reflejaría inestabilidad en el proceso de integración y entrega.
+  La fuente de datos son los logs del sistema, el historial de despliegues y el registro interno de incidencias.
+
+- **P-TEC-04 (Baja cobertura de pruebas en funcionalidades críticas):** Al inicio de cada sprint se identifican las historias de usuario críticas para el funcionamiento del producto (autenticación, gestión de datos, endpoints principales, persistencia, flujos sensibles).
+Al cierre del sprint se calcula el porcentaje de historias críticas que cuentan con pruebas funcionales o automáticas validadas: `(historias críticas con pruebas validadas / total historias críticas del sprint) × 100` 
+Se considera que una historia está cubierta si:
+  - existe evidencia de prueba manual o automática
+  - la prueba ha sido ejecutada con resultado satisfactorio
+  - el resultado ha quedado registrado
+
+  La fuente de datos es el tablero del sprint y el backlog técnico. El umbral de éxito es ≥ 80% por sprint, ya que un valor inferior indicaría acumulación de deuda técnica que podría comprometer la mantenibilidad futura del proyecto.
+
 ---
 
 ## 5. Validación y Verificación
@@ -255,3 +299,13 @@ Para asegurar que las mitigaciones han sido efectivas, se han establecido los si
 - **Verificación de Calidad (P-REN-03):** Responsable: revisor asignado a cada tarea. Fuente: historial de revisiones con puntuación desglosada por criterio. El revisor registra la puntuación de cada uno de los cuatro criterios de la rúbrica de §3.1. Si la media es inferior a 7,0, la entrega se devuelve indicando los criterios suspendidos. Si un miembro acumula dos entregas consecutivas por debajo de 7,0, el SM acuerda con él un plan de mejora.
 
 - **Control de Miembros Fuera de Rango (P-REN-04):** Responsable: SM del subequipo. Fuente: mismos valores de IRR calculados para P-REN-02. Se verifica semanalmente. Si más de 2 miembros presentan IRR fuera del rango [0,60 – 1,60], el SM determina si se trata de una anomalía puntual o de una desviación estructural que requiera replanificar la distribución de tareas del sprint en curso.
+
+### 5.4. Verificación de Riesgos Técnicos y de Calidad
+
+- **Control de la Deuda Técnica (P-TEC-01):** Responsable: SM de cada equipo. Fuente: Product Backlog. Al cerrar cada sprint se revisa el número de tareas técnicas planificadas y completadas. Si el porcentaje de resolución es menor del 80%, se priorizan tareas técnicas en el siguiente sprint, se revisa si la carga funcional ha sido excesiva y se ajusta la planificación para evitar acumulación.
+
+- **Control de bloqueos por dependencias (P-TEC-02):** Responsable: SM del subequipo. Fuente: tablero de tareas y registro de incidencias. Se verifica semanalmente revisando las tareas bloqueadas, la duración del bloqueo y la causa de este. Si una tarea permanece bloqueada por más de 24 horas por una dependencia no prevista, se reprioriza la tarea y se reasigna apoyo temporal. Al cerrar cada sprint se calcula el porcentaje total de tareas afectadas. Si supera el 10%, el equipo revisa en la retrospectiva si falló la detección de dependencias, la división de tareas fue incorrecta o si hubo falta de coordinación entre subequipos.
+
+- **Control de incidencias de despliegue (P-TEC-03):** Responsable: responsable de despliegue. Fuente: logs de integración continua y registro de incidencias. Se verifica tras cada despliegue, si se detecta alguna incidencia se documenta la causa raíz, se corrige el fallo y se actualiza el checklist de despliegue para prevenir recurrencias. Al cerrar el sprint, si se supera el umbral de 1 incidencia se revisa el proceso de integración, se añaden validaciones previas y se redefine el protocolo de despliegue.
+
+- **Control de pruebas críticas (P-TEC-04):** Responsable: equipo de QA. Fuente: archivos de pruebas y análisis de SonarCloud. Al cierre de cada sprint se revisan las historias críticas identificadas, las pruebas ejecutadas y las evidencias registradas. Si la cobertura es menor del 85%, se priorizan las pruebas pendientes antes del cierre del sprint, se bloquea la integración de funcionalidades sensibles no validadas y se revisa la carga de QA para el próximo sprint. Esto garantiza que los módulos más relevantes mantengan un nivel de calidad aceptable y reduzcan el riesgo de fallos en producción.
